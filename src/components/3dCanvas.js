@@ -1,25 +1,30 @@
 "use client"
 import { useRef } from "react"
 import { Canvas } from "@react-three/fiber"
-import { MeshReflectorMaterial, OrbitControls } from "@react-three/drei"
+import { MeshReflectorMaterial, OrbitControls,PivotControls, Html, TransformControls, PerspectiveCamera } from "@react-three/drei"
 import { MeshStandardMaterial } from "three"
+import { Suspense } from "react"
+
+import { Model } from "./model"
+import { ModelBike } from "./modelBike"
 
 
-export default function Experience(){
-    // const boxRef = useRef();
+export default function BikeTion(){
+    // const three = useThree()
+    // console.log(useThree)
+    // const{camera, gl} = useThree()
+    
     return (
-        <Canvas>
+        <Canvas >
             <OrbitControls />
-            <ambientLight />
-            <mesh>
-                <boxGeometry/>
-                <meshStandardMaterial />
-            </mesh>
+            <ambientLight intensity={1.4}/>
+            <directionalLight position={[1,2,3]} intensity={4.5}/>
 
-            <mesh position-y={ - 1 } rotation-x={ - Math.PI * 0.5 } scale={ 10 }>
-                <planeGeometry />
-                <meshStandardMaterial color="greenyellow" />
+        <Suspense>
+            <mesh scale={.5} position={[0,-3,0]}>
+                <ModelBike />
             </mesh>
+        </Suspense>
         </Canvas>
     ) 
 }
