@@ -13,7 +13,7 @@ import { Model } from "./model"
 export default function Footer3d(){
 
     const created = ({gl})=>{
-        gl.setClearColor('#ff0000', 1)
+        gl.setClearColor('#f5ffe8', 1)
     }
     return(
         <Canvas onCreated={created}>
