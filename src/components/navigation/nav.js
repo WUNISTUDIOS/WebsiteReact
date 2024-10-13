@@ -5,10 +5,20 @@ export default function Nav(){
 
     return(
         <header className="bg-white-200 ">
-            <nav>
-                <ul className="flex justify-between p-4">
+            <nav className="">
+                <ul className="flex text-xl items-center justify-between p-5">
                     <li>
-                        <Link href="/"><span>logo</span></Link>
+                        <div>
+                            <Link href="/">
+                                <img 
+                                    src="/images/moon_renderfav.png"
+                                    alt="logo"
+                                    width={80}
+                                    height={80}
+                                >
+                                </img>
+                            </Link>
+                        </div>
                     </li>
                     <li>
                         <Link href="/fullstack"> <span>fullstack</span></Link>
@@ -17,7 +27,7 @@ export default function Nav(){
                         <Link href="/dashboard"><span>motion</span></Link>
                     </li>
                     <li>
-                        <Link href="/github"><span>github</span></Link>
+                        <Link href="/github"><span>about</span></Link>
                     </li>
 
                 </ul>

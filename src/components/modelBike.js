@@ -15,7 +15,7 @@ export function ModelBike(props) {
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
-        <group name="drew_bones">
+        {/* <group name="drew_bones">
           <group name="body_subdivision">
             <skinnedMesh
               name="Cube004"
@@ -33,7 +33,7 @@ export function ModelBike(props) {
           <primitive object={nodes.ROOT} />
           <primitive object={nodes.CTRl_FOOTL} />
           <primitive object={nodes.CTRl_FOOTR} />
-        </group>
+        </group> */}
         <mesh
           name="chain"
           castShadow

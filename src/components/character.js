@@ -12,7 +12,7 @@ export default function Experience(){
     const sphereRef =useRef()
     const cubeRef = useRef()
     return (
-        <Canvas>
+        <Canvas className="h-screen p-10">
             
         <OrbitControls makeDefault />
         
