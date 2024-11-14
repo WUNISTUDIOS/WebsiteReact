@@ -21,10 +21,10 @@ export default function Footer3d(){
         gl.setClearColor('#f9f9f9', 1)
     }
     return(
-        <Canvas className="h-[50vh] w-[50vw"
+        <Canvas className="h-[50vh] w-[50vw] mx-auto my-8 p-4 bg-slate-200 rounded-lg shadow-lg"
             // style={{ width: '70%', height: '70%' }} 
             onCreated={created}
-            camera={{ fov: 55, position: [-5, 2, 5]}}>
+            camera={{ fov: 55, position: [-5, 2, 5]}}>``
             <OrbitControls />
             <directionalLight position={ [1,2,4]} intensity={ 4 }/>            
             <ambientLight intensity={ 1}/>
