@@ -15,6 +15,8 @@ import Home from "../page"
 export default function dashboard() {
 
   const [isOpen, setIsOpen] = useState(false)
+  const [isFxreel, setFxreel] = useState(false)
+  const [isLove, setLove] = useState(false)
   const handleClick = () => setIsClicked(!isClicked)
   return (
     <div>
@@ -89,9 +91,13 @@ export default function dashboard() {
             </video>
           </div>
           </motion.div>
-          <motion.div>
-            <motion.h2 className="shadow-lg p-2 text-center my-8 max-w-xl mx-auto bg-slate-600 rounded-lg"> Fx Reel</motion.h2>
-            <motion.div className="shadow-lg p-5 text-center max-w-4xl mx-auto bg-slate-600 rounded-lg">
+          <motion.div 
+            layout="position"
+            transition={{layout: {duration: 1}}}
+            onClick={() => setFxreel(!isFxreel)}>
+          <motion.h2 layout className="shadow-lg p-2 text-center my-8 max-w-xl mx-auto bg-stone-300 rounded-lg"> Fx Reel</motion.h2>
+          {isFxreel && (
+            <motion.div className="shadow-lg p-5 text-center max-w-4xl mx-auto bg-stone-300 rounded-lg">
               <p>is simply dummy text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
               when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -101,8 +107,9 @@ export default function dashboard() {
               remaining essentially unchanged.
               </p>
             </motion.div>
+          )}
           </motion.div>
-        </section>
+          </section>
         <section>
         <motion.div 
           layout 
