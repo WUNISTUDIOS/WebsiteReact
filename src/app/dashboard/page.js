@@ -13,11 +13,16 @@ import Home from "../page"
 
 
 export default function dashboard() {
-
   const [isOpen, setIsOpen] = useState(false)
   const [isFxreel, setFxreel] = useState(false)
-  const [isLove, setLove] = useState(false)
+
+  const [isLove, setIsLove] = useState(false)
+  const [isLoveText, setLoveText] = useState(false)
+
+  const [isMachine, setIsMachine] = useState(false)
+  const [isMachineText, setMachineText] = useState(false)
   const handleClick = () => setIsClicked(!isClicked)
+
   return (
     <div>
       <Head>
@@ -25,12 +30,12 @@ export default function dashboard() {
       </Head>
       <main>
         <section>
-        <div className="max-w-10xl mx-auto mt-20">
+        <div className="flex items-start justify-start ax-w-10xl mx-auto mt-20 ">
           <AnimatedText />
         </div>
         </section>
         <section>
-          <div className="flex relative gap-2 w-fit max-w-10xl my-10 max-w-7xl mx-auto overflow-hidden">
+          <div className="flex relative gap-2 w-fit  mx-auto overflow-hidden">
             <video
               className="w-1/2"
               loop
@@ -53,7 +58,7 @@ export default function dashboard() {
               autoPlay
               muted
             >
-              <source src="videos/AJSkating.mp4"/>
+              <source src="videos/SmallnomusicAJBlackSkatingV2000_1.mp4"/>
             </video>
             <video 
               className="w-1/2"
@@ -72,50 +77,57 @@ export default function dashboard() {
               <source src="videos/lov3IG.mp4"/>
             </video>
           </div>
-          </section>
-          <section>
-        <motion.div 
-          layout 
-          onClick={() => setIsOpen(!isOpen)}
-          animate={{ scale: isOpen ? 1.1 : 1 }}
-          transition={{ type: 'spring', stiffness: 300 }}
-          style={{ cursor: 'pointer' }}
-          >
-          <div className="relative w-[90%] max-w-10xl mx-auto my-10 rounded-xl overflow-hidden">
-            <video className="w-full"
-              loop
-              autoPlay
-              muted
-            >
-              <source src="videos/reel_stitch_06.mp4"/> 
-            </video>
-          </div>
-          </motion.div>
-          <motion.div 
-            layout="position"
-            transition={{layout: {duration: 1}}}
-            onClick={() => setFxreel(!isFxreel)}>
-          <motion.h2 layout className="shadow-lg p-2 text-center my-8 max-w-xl mx-auto bg-stone-300 rounded-lg"> Fx Reel</motion.h2>
-          {isFxreel && (
-            <motion.div className="shadow-lg p-5 text-center max-w-4xl mx-auto bg-stone-300 rounded-lg">
-              <p>is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              </p>
-              <p>
-              It has survived not only five centuries, but also the leap into electronic typesetting, 
-              remaining essentially unchanged.
-              </p>
-            </motion.div>
-          )}
-          </motion.div>
-          </section>
+        </section>
+        <section>
+        <div className="max-w-10xl mx-auto ">
+          <AnimatedText />
+        </div>
+        </section>
+        <section>
+              <motion.div 
+              layout 
+              onClick={() => setIsOpen(!isOpen)}
+              animate={{ scale: isOpen ? 1.2 : 1 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+              style={{ cursor: 'pointer' }}
+              >
+                <div className="relative w-[90%] max-w-10xl mx-auto my-10 rounded-xl overflow-hidden">
+                <video className="w-full"
+                  loop
+                  autoPlay
+                  muted
+                >
+                  <source src="videos/reel_stitch_06.mp4"/> 
+                </video>
+                </div>
+                </motion.div>
+                <motion.div 
+                layout="position"
+                transition={{layout: {duration: 1}}}
+                onClick={() => setFxreel(!isFxreel)}
+                style={{cursor: "pointer"}}
+                className=""
+                >
+                <motion.h2 layout className="shadow-xl rounded-lg p-4 text-black text-center font-bold max-w-min mx-auto">FxReel</motion.h2>
+                {isFxreel && (
+                  <motion.div className="shadow-xl  text-center my-2 max-w-4xl mx-auto rounded-lg">
+                    <p>As an aspiring technical artist. I spent 2023 at Seneca school of VFX for my post graduate studies.
+                      While focusing on Houdini and fx work, I also learnt about compositing, surfacing and look dev from the
+                      wonderful artists at Pixomondo and Seneca.
+                    </p>
+                    <p>
+                      This video is a culminating result of my studies
+                    </p>
+                  </motion.div>
+                )}
+              </motion.div>
+          </section>  
         <section>
         <motion.div 
           layout 
-          onClick={() => setIsOpen(!isOpen)}
-          animate={{ scale: isOpen ? 1.1 : 1 }}
-          transition={{ type: 'spring', stiffness: 300 }}
+          onClick={() => setIsLove(!isLove)}
+          animate={{ scale: isLove ? 1.2 : 1 }}
+          transition={{ type: 'spring', stiffness: 400 }}
           style={{ cursor: 'pointer' }}
           >
           <div className="relative w-[90%] max-w-10xl mx-auto my-10 rounded-xl overflow-hidden">
@@ -128,6 +140,63 @@ export default function dashboard() {
             </video>
           </div>
           </motion.div>
+          <motion.div 
+                layout="position"
+                transition={{layout: {duration: 1}}}
+                onClick={() => setLoveText(!isLoveText)}
+                style={{ cursor: 'pointer' }}
+                className=""
+                >
+                <motion.h2 layout className="shadow-xl rounded-lg p-4 text-black text-center font-bold max-w-min mx-auto">Love</motion.h2>
+                {isLoveText && (
+                  <motion.div className="shadow-xl text-center my-2 max-w-4xl mx-auto rounded-lg">
+                    <p> A collaboration with Artist Drew Boyle aka Oyle, I focued on animation and simulation work
+                      while oyle was in charge of look dev and world building
+                    </p>
+                    <p>
+                      Drew / Oyle collaborator 
+                    </p>
+                  </motion.div>
+                )}
+              </motion.div>
+          </section>
+          <section>
+        <motion.div 
+          layout 
+          onClick={() => setIsMachine(!isMachine)}
+          animate={{ scale: isMachine ? 1.2 : 1 }}
+          transition={{ type: 'spring', stiffness: 400 }}
+          style={{ cursor: 'pointer' }}
+          >
+          <div className="relative w-[90%] max-w-10xl mx-auto my-10 rounded-xl overflow-hidden">
+            <video className="w-full"
+              loop
+              autoPlay
+              muted
+            >
+              <source src="videos/CompressedMACHINEPRECUTV5.5.mp4"/> 
+            </video>
+          </div>
+          </motion.div>
+          <motion.div 
+                layout="position"
+                transition={{layout: {duration: 1}}}
+                onClick={() => setMachineText(!isMachineText)}
+                style={{ cursor: 'pointer' }}
+                className=""
+                >
+                <motion.h2 layout className="shadow-xl p-4 text-black text-center rounded-lg font-bold max-w-min mx-auto">MACHINE</motion.h2>
+                {isMachineText && (
+                  <motion.div className="shadow-xl p-4 text-center my-2 max-w-4xl mx-auto rounded-lg">
+                    <p> A collaboration with Artist Drew Boyle aka Oyle, I focued on animation and simulation work
+                      while oyle was in charge of look dev and world building
+                    </p>
+                    <p>
+                      Drew / Oyle collaborator 
+                    </p>
+                  </motion.div>
+                )}
+              </motion.div>
           </section>
           <section> 
           {/* <motion.div>

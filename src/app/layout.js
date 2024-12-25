@@ -12,15 +12,23 @@ export const metadata = {
 }
 const GatwickVariable = localFont({
   src: "../../public/typeface/Gatwick-Variable.ttf",
-  weight:"300",
+  weight:"1 999",
   variable: "--Font-GatwickVariable",
+})
+
+const MonumentExtended = localFont({
+  src: "../../public/typeface/MonumentExtended-Bold.otf",
+  weight:"1 999",
+  variable: "--Font-MonumentExtended",
 })
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={GatwickVariable.className}>
-      <Nav/>
+      <div className={MonumentExtended.className}>
+        <Nav/>
+      </div>
       <div className="h-16">
       </div>
         {children}
@@ -29,13 +37,13 @@ export default function RootLayout({ children }) {
           <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-left md:justify-between">
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://cgidoggs.world//" className="hover:underline">cgistudio</a>. All Rights Reserved.
             </span>
-            <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-              <li>
+            <ul className="flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400">
+              {/* <li>
                 <a href="#" className="hover:underline me-4 md:me-6">About</a>
               </li>
               <li>
                 <a href="#" className="hover:underline">Contact</a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </footer>

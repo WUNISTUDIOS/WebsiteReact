@@ -4,7 +4,7 @@ import React from 'react';
 const FigmaEmbed = () => {
   return (
     <section>
-    <div className="w-full h-screen boarder border-gray-200 p-4 rounded-lg">
+    <div className="flex flex-wrap justify-center py-40 p-5 w-full h-screen boarder border-gray-200 rounded-lg">
       <iframe
         src="https://embed.figma.com/design/rn1ZgoMlzSsIbvMH9JemnY/ProductPageLeafyThings?node-id=0-1&embed-host=share"
         width="800"

@@ -12,7 +12,7 @@ export default function AnimatedText(){
         'I love Graphix ',
     ];
     return (
-        <div className='text-4xl w-screen relative overflow-hidden whitespace-nowrap'>
+        <div className='text-6xl bold shadow-xl w-screen text-black h-20 relative overflow-hidden whitespace-nowrap rounded-sm'>
         <motion.div
             animate={{x: ["-100%", "100%"]}} // Moves the text from 0 to 100 pixels on the x-axis, then back to 0
             transition={{
