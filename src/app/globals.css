@@ -86,3 +86,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .variable-rounded {
+    border-radius: var(--rounded, "20%");
+  }
+}
+

@@ -5,7 +5,7 @@ export default function Nav(){
     return(
         <header >
             <nav>
-                <ul className="flex flex-wrap w-full font-extrabold fixed text-base xl:text-5xl md:text-4xl items-center justify-evenly">
+                <ul className="flex flex-wrap w-full font-extrabold fixed text-base xl:text-5xl md:text-4xl items-center justify-evenly bg-white">
                     <li>
                         <div>
                             <Link href="/">

@@ -2,6 +2,8 @@ import Head from "next/head"
 import Link from "next/link"
 import Image from "next/image"
 
+
+
 export default function AboutPage() {
     return (
     <div>
@@ -28,7 +30,7 @@ export default function AboutPage() {
         <main>
         <section>
             <div className="flex flex-wrap justify-center shadow-lg p-5 text-center">
-            <h1 className="text-transparent xl:text-8xl text-6xl font-bold bg-clip-text bg-gradient-to-r to-red-600 from-gray-950 py-5">digital designer</h1>
+            <h1 className="text-transparent xl:text-8xl text-6xl font-bold bg-clip-text bg-gradient-to-r from-red-600 to-gray-950 py-5">digital designer</h1>
             <p className="xl:text-5xl md:text-4xl text-lg">Wuni / cgistudio, is a creative design studio based 
                 in Toronto / Berlin specializing in developing identities for 
                 local businesses through three dimensional motion graphics, 
@@ -37,6 +39,13 @@ export default function AboutPage() {
                 S.T.E.A.M based learning environments. Leading the Wuni initiative 
                 is<strong class="font-semibold text-transparent text-3xl xl:text-6xl bg-clip-text bg-gradient-to-r to-red-600 from-gray-950 p-4"> Denzel Arthur, </strong> a digital artist with an interest in education, technology, and design</p>
             </div>
+        </section>
+        <section className="flex flex-wrap items-center align-center h-1/2 m-5">
+        <Image
+            src="/images/working_outside.png"
+            width={2550}
+            height={1785}
+          />
         </section>
         </main>
     </div>
