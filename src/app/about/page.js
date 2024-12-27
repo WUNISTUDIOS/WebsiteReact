@@ -29,7 +29,7 @@ export default function AboutPage() {
         </Head>
         <main>
         <section>
-            <div className="flex flex-wrap justify-center shadow-lg p-5 text-center">
+            <div className=" relative flex flex-wrap justify-center shadow-lg p-5 text-center">
             <h1 className="text-transparent xl:text-8xl text-6xl font-bold bg-clip-text bg-gradient-to-r from-red-600 to-gray-950 py-5">digital designer</h1>
             <p className="xl:text-5xl md:text-4xl text-lg">Wuni / cgistudio, is a creative design studio based 
                 in Toronto / Berlin specializing in developing identities for 

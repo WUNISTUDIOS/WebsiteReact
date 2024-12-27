@@ -39,7 +39,7 @@ const handleClick = () => setIsClicked(!isClicked)
         </section> */}
         <section>
           {/* <div className="flex max-h-min gap-2 w-fit max-w-[98%] rounded-lg mx-auto"> */}
-          <div className="flex flex-wrap items-start justify-between m-5 h-full">
+          <div className="flex flex-wrap items-start justify-between m-5 my-10 h-full">
             <video
               className="w-1/2"
               loop

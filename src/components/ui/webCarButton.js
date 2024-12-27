@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function CardButton({ href, imageSrc, title, description }) {
   return (
     <Link href={href} 
-        className="flex flex-col font-bold text-2xl p-10 text-center rounded-2xl shadow-2xl my-40">
+        className="font-bold text-2xl p-20 text-center rounded-2xl shadow-2xl">
       <div>
         <Image
           src={imageSrc}

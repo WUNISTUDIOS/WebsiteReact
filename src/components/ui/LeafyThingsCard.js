@@ -4,14 +4,14 @@ import Image from 'next/image';
 export default function LeafyCard({ href, imageSrc, title, description }) {
   return (
     <Link href={href} 
-        className="flex flex-col font-bold text-2xl p-10 text-center rounded-2xl shadow-2xl my-40">
+        className="font-bold text-2xl text-center rounded-2xl p-20 py-10 shadow-2xl">
       <div>
         <Image
           src={imageSrc}
           alt={title}
           width={200}
           height={300}
-          className='rounded-3xl p-5'
+          className='rounded-3xl p-10'
         />
         <h2>{title}</h2>
         <p>{description}</p>
