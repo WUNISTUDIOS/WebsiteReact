@@ -4,16 +4,19 @@ import Image from 'next/image';
 export default function LeafyCard({ href, imageSrc, title, description }) {
   return (
     <Link href={href} 
-        className="font-bold text-2xl text-center rounded-2xl p-20 py-10 shadow-2xl">
+        className="text-center content-center hover:cursor-pointer hover:scale-105 transition-transform"
+    >
       <div>
         <Image
           src={imageSrc}
           alt={title}
-          width={200}
-          height={300}
-          className='rounded-3xl p-10'
+          width={300}
+          height={500}
+          className='rounded-3xl'
         />
-        <h2>{title}</h2>
+        <h2
+          className='font-bold text-2xl mt-2'
+        >{title}</h2>
         <p>{description}</p>
       </div>
     </Link>
