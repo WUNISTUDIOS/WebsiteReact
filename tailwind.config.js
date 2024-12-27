@@ -7,6 +7,10 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+	fontFamily: {
+		gatwick: ["var--font-gatwick", "sans-serif"],
+		monument: ["var--font-monument", "sans-serif"],
+	},
   	extend: {
   		backgroundImage: {
   			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
