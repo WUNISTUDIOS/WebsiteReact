@@ -122,10 +122,22 @@ const handleClick = () => setIsClicked(!isClicked)
                 onClick={() => setFxreel(!isFxreel)}
                 style={{cursor: "pointer"}}
                 >
-                <motion.h2 layout className="shadow-xl rounded-lg p-4 text-black text-center font-bold max-w-min mx-auto">FxReel</motion.h2>
+                <motion.h2 
+                  layout='position'
+                  transition={{ duration: 1, ease: "easeInOut"}} 
+                  className="shadow-xl rounded-lg p-4 text-black text-center font-bold max-w-min mx-auto"
+                >
+                  FxReel
+                </motion.h2>
                 {isFxreel && (
-                  <motion.div className="font-monument shadow-xl text-center my-2 max-w-4xl mx-auto rounded-lg">
-                    <p>As an aspiring technical artist. I spent 2023 at Seneca school of VFX for my post graduate studies.
+                  <motion.div
+                    layout="position"
+                    transition={{layout: {duration: 1}}}
+                    className="font-monument shadow-xl text-center mr-5 ml-5 my-5 mx-auto rounded-lg "
+                    style={{cursor: "pointer"}}
+                  >
+                    
+                    <p>As an aspiring technical artist. I spent 2023 at Seneca school of VFX for my post graduate studies.<br></br>
                       While focusing on Houdini and fx work, I also learnt about compositing, surfacing and look dev from the
                       wonderful artists at Pixomondo and Seneca.
                     </p>
@@ -165,12 +177,11 @@ const handleClick = () => setIsClicked(!isClicked)
                 transition={{layout: {duration: 1}}}
                 onClick={() => setLoveText(!isLoveText)}
                 style={{ cursor: 'pointer' }}
-                className=""
                 >
                 <motion.h2 layout className="shadow-xl rounded-lg p-4 text-black text-center font-bold max-w-min mx-auto">Love</motion.h2>
                 {isLoveText && (
-                  <motion.div className="font-monument shadow-xl text-center my-2 max-w-4xl mx-auto rounded-lg">
-                    <p> A collaboration with Artist Drew Boyle aka Oyle, I focued on animation and simulation work
+                  <motion.div className="font-monument shadow-xl text-center mr-5 ml-5 my-5 mx-auto rounded-lg">
+                    <p className='p-2'> A collaboration with Artist Drew Boyle aka Oyle, I focued on animation and simulation work
                       while oyle was in charge of look dev and world building
                     </p>
                     <p>
@@ -211,7 +222,7 @@ const handleClick = () => setIsClicked(!isClicked)
                 >
                 <motion.h2 layout className="shadow-xl p-4 text-black text-center rounded-lg font-bold max-w-min mx-auto">MACHINE</motion.h2>
                 {isMachineText && (
-                  <motion.div className="font-monument shadow-xl p-4 text-center my-2 max-w-4xl mx-auto rounded-lg">
+                  <motion.div className="font-monument shadow-xl p-4 text-center mr-5 ml-5 my-5 mx-auto rounded-lg">
                     <p> A collaboration with Artist Drew Boyle aka Oyle, I focued on animation and simulation work
                       while oyle was in charge of look dev and world building
                     </p>
