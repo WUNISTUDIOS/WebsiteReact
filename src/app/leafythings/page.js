@@ -6,17 +6,13 @@ export default function Leafy(){
     return (
         <section className='my-40'>
             <div className='flex flex-col content-center justify-evenly text-center space-y-2'>
-                <h1 className='font-bold text-8xl '
+                <h1 className='font-bold text-4xl xl:text-xl md:text-xl '
                 >
-                    UI - UX
+                    LEAFYTHINGS
                 </h1>
                 <h1 className='font-bold text-4xl '
                 >
-                    Product Design
-                </h1>
-                <h1 className='font-bold text-2xl '
-                >
-                    automation
+                    / Product Design / UI - UX / 
                 </h1>
                 <p className='font-extralight xl:text-2xl md:text-4xl text-4xl m-5'
                 > 
@@ -25,16 +21,8 @@ export default function Leafy(){
                     wholesale and consumer stand point, I interprate and anticipate
                     the needs of the industry as it adapts to the gobal digital market
                 </p>
-                {/* <div className="flex justify-center">
-                    <Image
-                        src="/images/busy_bee_alpha.png"
-                        width={2000}
-                        height={2000}
-                        className="max-w-[80%] md:max-w-[60%] h-auto"
-                    />
-                </div> */}
             </div>
-            <div className='content-center m-5'>
+            <div className='content-center m-5 relative'>
             <Image
                     src="/images/buzzed_papers.png"
                     width={2000}
@@ -42,48 +30,67 @@ export default function Leafy(){
                     className='shadow-sm rounded-xl'
                 />
             </div>
-            <section className="flex flex-wrap justify-start p-5 ">
-                <div className="w-full sm:w-1/2 lg:w-1/2 ">
+        <section className="flex relative flex-wrap justify-start p-5 ">
+            <div className="w-full sm:w-1/2 lg:w-1/2 ">
+            <Image
+                src="/images/buzzd_baggy.png"
+                width={3000}
+                height={3000}
+                className="w-full h-auto shadow-sm rounded-xl"
+            /> 
+            </div>
+            <div className=" w-full sm:w-1/2 lg:w-1/2 ">
                 <Image
-                    src="/images/buzzd_baggy.png"
-                    width={3000}
-                    height={3000}
-                    className="w-full h-auto shadow-sm rounded-xl"
-                /> 
-                </div>
-                <div className="w-full sm:w-1/2 lg:w-1/2 ">
-                    <Image
-                        src="/images/bussy_baggy.png"
-                        width={5000}
-                        height={5000}
-                        className="w-full h-auto shadow-sm rounded-xl"
-                    /> 
-                </div>
-                <div className="w-full sm:w-1/2 lg:w-1/2 ">
-                <Image
-                    src="/images/bussy_tray_large.png"
+                    src="/images/bussy_baggy.png"
                     width={5000}
                     height={5000}
                     className="w-full h-auto shadow-sm rounded-xl"
                 /> 
-                </div>
-                <div className="w-full sm:w-1/2 lg:w-1/2 ">
-                    <Image
-                        src="/images/buzzd_tray_large.png"
-                        width={5000}
-                        height={5000}
-                        className="w-full h-auto shadow-sm rounded-xl"
-                    /> 
-                </div>
-            </section>
+            </div>
+            <div className="w-full sm:w-1/2 lg:w-1/2 ">
+            <Image
+                src="/images/bussy_tray_large.png"
+                width={5000}
+                height={5000}
+                className="w-full h-auto shadow-sm rounded-xl"
+            /> 
+            </div>
+            <div className="w-full sm:w-1/2 lg:w-1/2 ">
+                <Image
+                    src="/images/buzzd_tray_large.png"
+                    width={5000}
+                    height={5000}
+                    className="w-full h-auto shadow-sm rounded-xl"
+                /> 
+            </div>
+        </section>
             <div className="flex flex-col items-center justify-center text-center space-y-2">
                 <p className="font-extralight text-sm m-5"> 
                     concept package designs for buzzd and busy bee
                 </p>
             </div>
-
-            <div>
-                </div>
+        <section className='flex flex-wrap items-start justfy-center'>
+            <p className='text-sm w-full md:w-1/2 p-5'>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type 
+                specimen book. It has survived not only five centuries, <br></br> but also the leap into 
+                electronic typesetting, remaining essentially unchanged. It was popularised in 
+                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+            </p>
+            <Image
+                src="/images/EatmedesktopPage.jpg"
+                width={2150}
+                height={5777}
+                className="w-[30%] shadow-sm rounded-xl p-5"
+            />
+            <Image
+                src="/images/shopEatme.jpg"
+                width={390}
+                height={2515}
+                className="h-[20%] w-[20%] shadow-sm rounded-xl p-5"
+            />
+            </section>
             <div className="flex flex-wrap justify-center relative p-5">
                 <iframe
                     src="https://embed.figma.com/design/rn1ZgoMlzSsIbvMH9JemnY/ProductPageLeafyThings?node-id=0-1&embed-host=share"
