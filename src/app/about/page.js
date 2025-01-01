@@ -37,7 +37,7 @@ export default function AboutPage() {
                 traditional graphic design, web design, and storytelling. 
                 Wuni also develops educational content for maker spaces and other 
                 S.T.E.A.M based learning environments. Leading the Wuni initiative 
-                is<strong class="font-semibold text-transparent text-3xl xl:text-6xl bg-clip-text bg-gradient-to-r to-red-600 from-gray-950 p-4">Denzel Arthur,</strong> a digital artist with an interest in education, technology, and design</p>
+                is<strong class="font-semibold text-transparent text-3xl xl:text-6xl bg-clip-text bg-gradient-to-r to-red-600 from-gray-950 p-1">Denzel Arthur,</strong>a digital artist with an interest in education, technology, and design</p>
             </div>
         </section>
         <section className="flex flex-wrap items-center align-center h-1/2 m-5">

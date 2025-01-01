@@ -10,7 +10,7 @@ export default function Leafy(){
                 >
                     LEAFYTHINGS
                 </h1>
-                <h1 className='font-bold text-4xl '
+                <h1 className='font-bold text-4xl underline '
                 >
                     / Product Design / UI - UX / 
                 </h1>
