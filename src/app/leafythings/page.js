@@ -70,25 +70,29 @@ export default function Leafy(){
                 </p>
             </div>
         <section className='flex flex-wrap items-start justfy-center'>
-            <p className='text-sm w-full md:w-1/2 p-5'>
+            <div className='text-sm w-full md:w-1/3 p-5'>
+            <h1 className='font-bold text-4xl xl:text-xl md:text-xl'> Eatme UI</h1>
+            <hr className='my-2'></hr>
+            <p className='font-monument relative'>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type 
-                specimen book. It has survived not only five centuries, <br></br> but also the leap into 
+                specimen book. It has survived not only five centuries, <br></br> <br></br>but also the leap into 
                 electronic typesetting, remaining essentially unchanged. It was popularised in 
                 the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
             </p>
+            </div>
             <Image
                 src="/images/EatmedesktopPage.jpg"
                 width={2150}
                 height={5777}
-                className="w-[30%] shadow-sm rounded-xl p-5"
+                className="md:w-[40%] w-full shadow-sm rounded-xl p-5"
             />
             <Image
                 src="/images/shopEatme.jpg"
                 width={390}
                 height={2515}
-                className="h-[20%] w-[20%] shadow-sm rounded-xl p-5"
+                className=" md:w-[20%] shadow-sm rounded-xl p-5"
             />
             </section>
             <div className="flex flex-wrap justify-center relative p-5">
