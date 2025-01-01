@@ -74,27 +74,35 @@ export default function Leafy(){
             <h1 className='font-bold text-4xl xl:text-xl md:text-xl'> Eatme UI</h1>
             <hr className='my-2'></hr>
             <p className='font-monument relative'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type 
-                specimen book. It has survived not only five centuries, <br></br> <br></br>but also the leap into 
-                electronic typesetting, remaining essentially unchanged. It was popularised in 
-                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                A direct to consumer desktop and mobile application. 
+                A frictionless platform for both developers, consumers and clients. 
+                Individualistic yet well researched platforms designed for a fast paced 
+                ever changing digital market.<br></br> <br></br>
+                Eat me, with its bold and colorful package design, have themselves a platform 
+                that highlights their unique branding, while cleverly revealing their product 
+                categories and statistics.
+
             </p>
             </div>
             <Image
                 src="/images/EatmedesktopPage.jpg"
                 width={2150}
                 height={5777}
-                className="md:w-[40%] w-full shadow-sm rounded-xl p-5"
+                className="md:w-[40%] w-full shadow-sm rounded-xl p-5 relative"
             />
             <Image
                 src="/images/shopEatme.jpg"
                 width={390}
                 height={2515}
-                className=" md:w-[20%] shadow-sm rounded-xl p-5"
+                className=" md:w-[20%] shadow-sm rounded-xl p-5 relative"
             />
             </section>
+            <div className='flex flex-col content-center justify-evenly text-center space-y-2'>
+                <h1 className='font-bold text-4xl '
+                >
+                    Some of my Jams
+                </h1>
+                </div>
             <div className="flex flex-wrap justify-center relative p-5">
                 <iframe
                     src="https://embed.figma.com/design/rn1ZgoMlzSsIbvMH9JemnY/ProductPageLeafyThings?node-id=0-1&embed-host=share"

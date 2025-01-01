@@ -137,9 +137,12 @@ const handleClick = () => setIsClicked(!isClicked)
                     style={{cursor: "pointer"}}
                   >
                     
-                    <p>As an aspiring technical artist. I spent 2023 at Seneca school of VFX for my post graduate studies.<br></br>
-                      While focusing on Houdini and fx work, I also learnt about compositing, surfacing and look dev from the
-                      wonderful artists at Pixomondo and Seneca.
+                    <p className='p-2'>To further improve as a technical artist, 
+                      I spent 2023 at Seneca school of VFX in their post graduate program.<br></br>
+                    With a special interest in effects simulation, I learnt from industry leading artists, 
+                    the full visual effects pipeline used for Hollywood productions. 
+                    From matchmoving to tool building. I left the program with a renewed vigor and a 
+                    deeper understanding of computer graphics.
                     </p>
                     <p>
                       This video is a culminating result of my studies
@@ -178,11 +181,14 @@ const handleClick = () => setIsClicked(!isClicked)
                 onClick={() => setLoveText(!isLoveText)}
                 style={{ cursor: 'pointer' }}
                 >
-                <motion.h2 layout className="shadow-xl rounded-lg p-4 text-black text-center font-bold max-w-min mx-auto">Love</motion.h2>
+                <motion.h2 layout className="shadow-xl rounded-lg p-4 text-black text-center font-bold max-w-min mx-auto">Lov3</motion.h2>
                 {isLoveText && (
                   <motion.div className="font-monument shadow-xl text-center mr-5 ml-5 my-5 mx-auto rounded-lg">
-                    <p className='p-2'> A collaboration with Artist Drew Boyle aka Oyle, I focued on animation and simulation work
-                      while oyle was in charge of look dev and world building
+                    <p className='p-2'> A collaboration with artist and director Drew Boyle to produce a full length - full cg 
+                      music for LOV3. His attention to detail along with his skills in Look development meshed 
+                      perfection with my technical animation and fx skills.<br></br> 
+                      End result is cohesive and detailed world that follows our protagonist on his epic journey to 
+                      the “northstar” 
                     </p>
                     <p>
                       Drew / Oyle collaborator 
@@ -223,11 +229,7 @@ const handleClick = () => setIsClicked(!isClicked)
                 <motion.h2 layout className="shadow-xl p-4 text-black text-center rounded-lg font-bold max-w-min mx-auto">MACHINE</motion.h2>
                 {isMachineText && (
                   <motion.div className="font-monument shadow-xl p-4 text-center mr-5 ml-5 my-5 mx-auto rounded-lg">
-                    <p> A collaboration with Artist Drew Boyle aka Oyle, I focued on animation and simulation work
-                      while oyle was in charge of look dev and world building
-                    </p>
-                    <p>
-                      Drew / Oyle collaborator 
+                    <p> Commissioned by Angel De La Torre, machine is a full length cg feature for his song machine. 
                     </p>
                   </motion.div>
                 )}
@@ -235,14 +237,14 @@ const handleClick = () => setIsClicked(!isClicked)
           </section>
           <section> 
           {/* <motion.div>
-            <YoutTubeEmbed />
+            <YoutTubeEmbed />b
           </motion.div> */}
           {/* <div className="h-screen">
             <BikeTion />
           </div> */}
         </section>
 
-        <section className="flex flex-wrap items-center justify-evenly w-full p-10">
+        <section className="flex flex-wrap items-center justify-start w-full p-10">
           {/* <div className="w-full sm:w-1/2 lg:w-1/3 ">
           <Image
             src="/images/white.png"

@@ -73,7 +73,7 @@ export default function AboutPage() {
                 <hr></hr>
             </p>
         </section>
-        <section className="flex flex-wrap items-center justify-evenly w-full p-5">
+        {/* <section className="flex flex-wrap items-center justify-evenly w-full p-5">
             <div className="w-[5%]">
                 <Image
                 src="/images/sidefx_badge_flat.png"
@@ -106,7 +106,7 @@ export default function AboutPage() {
                 // className="w-full h-auto"
                 /> 
             </div>
-        </section>
+        </section> */}
         </main>
     </div>
     )
