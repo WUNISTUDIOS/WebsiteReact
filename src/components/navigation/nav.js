@@ -6,7 +6,7 @@ export default function Nav(){
         <header >
             <nav>
                 <ul 
-                    className="flex flex-wrap w-full font-extrabold fixed text-base xl:text-5xl md:text-4xl items-center justify-evenly bg-white ">
+                    className="flex flex-wrap w-full font-extrabold fixed text-base xl:text-5xl md:text-4xl items-center justify-evenly bg-black text-white ">
                     <li>
                         <div>
                             <Link href="/"

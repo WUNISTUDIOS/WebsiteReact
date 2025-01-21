@@ -2,7 +2,7 @@
 import Head from "next/head"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Link from "next/link"
-import AnimatedText, { AnimatedText02 } from "@/components/text-animation";
+// import AnimatedText, { AnimatedText02 } from "@/components/text-animation"
 import { motion } from "framer-motion"
 import { useState } from "react"
 
@@ -10,8 +10,7 @@ import Experience from "../components/character.js"
 import Footer3d from "../components/footer3d"
 
 import Image from "next/image"
-// import tshirt_idea from "./tshirt_idea.png"
-
+import OrbShader from "@/components/OrbShader.js"
 
 
 export default function Home() {
@@ -31,7 +30,7 @@ const handleClick = () => setIsClicked(!isClicked)
       <Head>
         <title>cgidoggs's Dungeon</title>
       </Head>
-      <main>
+      <main >
           {/* <section>
             <div className="flex items-start justify-start ax-w-10xl mx-auto mt-20 my-10 ">
               <AnimatedText />
@@ -89,7 +88,8 @@ const handleClick = () => setIsClicked(!isClicked)
         </section> */}
         <section>
           <div className=" ml-10 mr-10 py-10">
-            <Footer3d/>
+            {/* <Footer3d/> */}
+            <OrbShader />
           </div>
           {/* <div>
             <Image src={deved} layout="fill"/>
@@ -125,7 +125,7 @@ const handleClick = () => setIsClicked(!isClicked)
                 <motion.h2 
                   layout='position'
                   transition={{ duration: 1, ease: "easeInOut"}} 
-                  className="shadow-xl rounded-lg p-4 text-black text-center font-bold max-w-min mx-auto"
+                  className="shadow-xl rounded-lg p-4 text-center font-bold max-w-min mx-auto"
                 >
                   FxReel
                 </motion.h2>
@@ -181,7 +181,7 @@ const handleClick = () => setIsClicked(!isClicked)
                 onClick={() => setLoveText(!isLoveText)}
                 style={{ cursor: 'pointer' }}
                 >
-                <motion.h2 layout className="shadow-xl rounded-lg p-4 text-black text-center font-bold max-w-min mx-auto">Lov3</motion.h2>
+                <motion.h2 layout className="shadow-xl rounded-lg p-4 text-center font-bold max-w-min mx-auto">Lov3</motion.h2>
                 {isLoveText && (
                   <motion.div className="font-monument shadow-xl text-center mr-5 ml-5 my-5 mx-auto rounded-lg">
                     <p className='p-2'> A collaboration with artist and director Drew Boyle to produce a full length - full cg 
@@ -226,7 +226,7 @@ const handleClick = () => setIsClicked(!isClicked)
                 style={{ cursor: 'pointer' }}
                 className=""
                 >
-                <motion.h2 layout className="shadow-xl p-4 text-black text-center rounded-lg font-bold max-w-min mx-auto">MACHINE</motion.h2>
+                <motion.h2 layout className="shadow-xl p-4 text-center rounded-lg font-bold max-w-min mx-auto">MACHINE</motion.h2>
                 {isMachineText && (
                   <motion.div className="font-monument shadow-xl p-4 text-center mr-5 ml-5 my-5 mx-auto rounded-lg">
                     <p> Commissioned by Angel De La Torre, machine is a full length cg feature for his song machine. 
