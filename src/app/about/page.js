@@ -9,7 +9,7 @@ export default function AboutPage() {
     <div>
         <div>
         <nav className=" flex mt-20 justify-center pt-20">
-                <ul className="flex text-xl space-x-5 underline font-bold">
+                <ul className="flex text-xl space-x-5 underline font-bold text-white">
 
                     <li>
                         <Link href="https://www.instagram.com/trouwsers/"> <span>instagram</span></Link>
@@ -30,14 +30,14 @@ export default function AboutPage() {
         <main>
         <section>
             <div className=" relative flex flex-wrap justify-center shadow-sm p-5 text-center">
-            <h1 className="text-transparent xl:text-8xl text-6xl font-bold bg-clip-text bg-gradient-to-r from-red-600 to-gray-950 py-5">digital designer</h1>
-            <p className="xl:text-5xl md:text-4xl text-lg">Wuni / cgistudio, is a creative design studio based 
+            <h1 className="text-transparent xl:text-8xl text-6xl font-bold bg-clip-text bg-gradient-to-r from-red-600 to-blue-600 py-5">digital designer</h1>
+            <p className="xl:text-5xl md:text-4xl text-white text-lg">Wuni / cgistudio, is a creative design studio based 
                 in Toronto / Berlin specializing in developing identities for 
                 local businesses through three dimensional motion graphics, 
                 traditional graphic design, web design, and storytelling. 
                 Wuni also develops educational content for maker spaces and other 
                 S.T.E.A.M based learning environments. Leading the Wuni initiative 
-                is<strong class="font-semibold text-transparent text-3xl xl:text-6xl bg-clip-text bg-gradient-to-r to-red-600 from-gray-950 p-1">Denzel Arthur,</strong>a digital artist with an interest in education, technology, and design</p>
+                is<strong class="font-semibold text-transparent text-3xl xl:text-6xl bg-clip-text bg-gradient-to-r to-red-600 from-blue-500 p-1">Denzel Arthur,</strong>a digital artist with an interest in education, technology, and design</p>
             </div>
         </section>
         <section className="flex flex-wrap items-center align-center h-1/2 m-5">
@@ -48,15 +48,15 @@ export default function AboutPage() {
         />
         </section>
         <div className="flex flex-col items-center justify-center text-center">
-                <p className="font-extralight text-sm"> 
+                <p className="font-extralight text-slate-500 text-sm"> 
                     render for active labour print magazine
                 </p>
             </div>
         <section className='flex flex-col p-5'>
-            <h1 className='relative font-bold text-6xl'> Clients</h1>
+            <h1 className='relative font-bold text-6xl text-white'> Clients</h1>
             <hr></hr>
             <br></br>
-            <p className='font-extralight xl:text-5xl md:text-4xl text-lg'>
+            <p className='font-extralight xl:text-5xl md:text-4xl text-lg text-white'>
                 Spencer Badu
                 <br></br>
                 <hr></hr>

@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Link from "next/link"
 // import AnimatedText, { AnimatedText02 } from "@/components/text-animation"
 import { motion } from "framer-motion"
-import { useState } from "react"
+import { useRef, useState } from "react"
 
 import Experience from "../components/character.js"
 import Footer3d from "../components/footer3d"
@@ -14,7 +14,7 @@ import OrbShader from "@/components/OrbShader.js"
 
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false)
+const [isOpen, setIsOpen] = useState(false)
 const [isFxreel, setFxreel] = useState(false)
 
 const [isLove, setIsLove] = useState(false)
@@ -24,9 +24,19 @@ const [isMachine, setIsMachine] = useState(false)
 const [isMachineText, setMachineText] = useState(false)
 const handleClick = () => setIsClicked(!isClicked)
 
+const videoRef = useRef(null)
+const [isMuted, setIsMuted] = useState(true)
+const handleVideoClick = () => {
+  const newMutedState = !isMuted
+  setIsMuted(newMutedState)
+
+  if(videoRef.current){
+    videoRef.current.muted = newMutedState
+  }
+}
 
   return (
-    <div>
+    <div className="">
       <Head>
         <title>cgidoggs's Dungeon</title>
       </Head>
@@ -125,7 +135,7 @@ const handleClick = () => setIsClicked(!isClicked)
                 <motion.h2 
                   layout='position'
                   transition={{ duration: 1, ease: "easeInOut"}} 
-                  className="shadow-xl rounded-lg p-4 text-center font-bold max-w-min mx-auto"
+                  className="shadow-xl rounded-lg text-white p-4 bg-red-800 text-center font-bold max-w-min mx-auto"
                 >
                   FxReel
                 </motion.h2>
@@ -133,7 +143,7 @@ const handleClick = () => setIsClicked(!isClicked)
                   <motion.div
                     layout="position"
                     transition={{layout: {duration: 1}}}
-                    className="font-monument shadow-xl text-center mr-5 ml-5 my-5 mx-auto rounded-lg "
+                    className="font-monument shadow-xl bg-red-800 text-white text-center mr-5 ml-5 my-5 p-5 mx-auto rounded-lg "
                     style={{cursor: "pointer"}}
                   >
                     
@@ -168,11 +178,13 @@ const handleClick = () => setIsClicked(!isClicked)
           >
           
             <video className="w-full"
+              ref={videoRef}
               loop
               autoPlay
-              muted
+              muted={isMuted}
+              onClick={handleVideoClick}
             >
-              <source src="videos/CLOV3.mp4"/> 
+              <source src="videos/HB2_LOVE.mp4"/> 
             </video>
           </motion.div>
           <motion.div 
@@ -181,9 +193,9 @@ const handleClick = () => setIsClicked(!isClicked)
                 onClick={() => setLoveText(!isLoveText)}
                 style={{ cursor: 'pointer' }}
                 >
-                <motion.h2 layout className="shadow-xl rounded-lg p-4 text-center font-bold max-w-min mx-auto">Lov3</motion.h2>
+                <motion.h2 layout className="shadow-xl bg-red-800 text-white rounded-lg p-4 text-center  font-bold max-w-min mx-auto">Lov3</motion.h2>
                 {isLoveText && (
-                  <motion.div className="font-monument shadow-xl text-center mr-5 ml-5 my-5 mx-auto rounded-lg">
+                  <motion.div className="font-monument shadow-xl bg-red-800 text-white text-center mr-5 ml-5 my-5 mx-auto p-5 rounded-lg">
                     <p className='p-2'> A collaboration with artist and director Drew Boyle to produce a full length - full cg 
                       music for LOV3. His attention to detail along with his skills in Look development meshed 
                       perfection with my technical animation and fx skills.<br></br> 
@@ -226,9 +238,9 @@ const handleClick = () => setIsClicked(!isClicked)
                 style={{ cursor: 'pointer' }}
                 className=""
                 >
-                <motion.h2 layout className="shadow-xl p-4 text-center rounded-lg font-bold max-w-min mx-auto">MACHINE</motion.h2>
+                <motion.h2 layout className="shadow-xl p-4 text-center bg-red-800 text-white rounded-lg font-bold max-w-min mx-auto">MACHINE</motion.h2>
                 {isMachineText && (
-                  <motion.div className="font-monument shadow-xl p-4 text-center mr-5 ml-5 my-5 mx-auto rounded-lg">
+                  <motion.div className="font-monument shadow-xl p-4 text-center bg-red-800 text-white mr-5 ml-5 my-5 mx-auto rounded-lg">
                     <p> Commissioned by Angel De La Torre, machine is a full length cg feature for his song machine. 
                     </p>
                   </motion.div>

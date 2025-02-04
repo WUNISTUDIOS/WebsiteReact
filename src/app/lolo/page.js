@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Lolo(){
     return (
-        <section className='my-40'>
+        <section className='my-40 text-white '>
             <div className='flex flex-col content-center justify-evenly space-y-2'>
                 <h1 className='font-bold text-center text-4xl xl:text-xl md:text-4xl '
                 >

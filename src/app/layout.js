@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={GatwickVariable.className}>
+      <section className="bg-black">
       <div className={MonumentExtended.className}>
         <Nav/>
       </div>
@@ -33,7 +34,7 @@ export default function RootLayout({ children }) {
       </div>
         {children}
 
-        <footer className="rounded-lg shadow m-4">
+        <footer className=" bg-black shadow">
           <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-left md:justify-between">
             <span className="text-sm text-slate-400 sm:text-center dark:text-gray-400">© 2025 <a href="https://cgidoggs.world//" className="hover:underline">cgistudio</a>. All Swag Reserved 1-800-welovegraphix
             </span>
@@ -47,6 +48,7 @@ export default function RootLayout({ children }) {
             </ul>
           </div>
         </footer>
+      </section>
       </body>
     </html>
   )
