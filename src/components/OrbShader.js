@@ -16,7 +16,7 @@ function Orb(){
     const uniforms = useMemo(
         () => ({
             uTime: {value: 0},
-            uIntensity: {value: 0.3},
+            uIntensity: {value: 0.1},
         }),[])
     useFrame((state) =>{
         const {clock} = state
@@ -24,7 +24,7 @@ function Orb(){
             mesh.current.material.uniforms.uTime.value = clock.getElapsedTime(),
             mesh.current.material.uniforms.uIntensity.value = MathUtils.lerp(
                 mesh.current.material.uniforms.uIntensity.value,
-                hover.current ? 0.85 : 0.15, 0.02)
+                hover.current ? 0.85 : 0.35, 0.02)
         }
     })
     return (
@@ -34,7 +34,7 @@ function Orb(){
             onPointerOver={() => (hover.current = true)}
             onPointerOut={() => (hover.current = false)}
             >
-                <planeGeometry args={[30, 10, 100, 100]} />
+                <planeGeometry args={[30, 10, 200, 200]} />
                 <shaderMaterial 
                     vertexShader={VShader}
                     fragmentShader={FShader}

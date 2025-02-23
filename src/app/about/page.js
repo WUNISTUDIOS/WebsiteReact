@@ -12,13 +12,13 @@ export default function AboutPage() {
                 <ul className="flex text-xl space-x-5 underline font-bold text-white">
 
                     <li>
-                        <Link href="https://www.instagram.com/trouwsers/"> <span>instagram</span></Link>
+                        <Link target="_blank" href="https://www.instagram.com/trouwsers/"> <span>instagram</span></Link>
                     </li>
                     <li>
-                        <Link href="/dashboard"><span>email</span></Link>
+                        <Link target="_blank" href="/dashboard"><span>email</span></Link>
                     </li>
                     <li>
-                        <Link href="https://github.com/WUNISTUDIOS"><span>github</span></Link>
+                        <Link target="_blank" href="https://github.com/WUNISTUDIOS"><span>github</span></Link>
                     </li>
 
                 </ul>
@@ -53,27 +53,41 @@ export default function AboutPage() {
                 </p>
             </div>
         <section className='flex flex-col p-5'>
-            <h1 className='relative font-bold text-6xl text-white'> Clients</h1>
+            <h1 className='relative font-bold text-4xl xl:text-6xl md:text-4xl text-white'> Clients/Collaborators</h1>
             <hr></hr>
             <br></br>
-            <p className='font-extralight xl:text-5xl md:text-4xl text-lg text-white'>
-                Spencer Badu
-                <br></br>
+            <ul className='font-extralight xl:text-5xl md:text-4xl text-lg text-white'>
+                <li>
+                    <Link target="_blank" href="https://www.spencerbadu.com/"><spann>Spencer Badu</spann></Link>
+                </li>
                 <hr></hr>
-                Crux Kitchen
-                <br></br>
+                <li>
+                    <Link target="_blank" href="https://cruxkitchen.com/"><spann>Crux Kitchen</spann></Link>
+                </li>
                 <hr></hr>
-                Leafythings
-                <br></br>
+                <li>
+                    <Link target="_blank" href="https://www.leafythings.com/"><spann>LeafyThings</spann></Link>
+                </li>
                 <hr></hr>
-                Kalibur+
-                <br></br>
+                <li>
+                    <Link target="_blank" href="https://www.instagram.com/humanresources.dept/"><spann>Human Resources</spann></Link>
+                </li>
                 <hr></hr>
-                Oligarchy
+                <li>
+                    <Link target="_blank" href="https://www.oligarchy.ca/"><spann>Oligarchy</spann></Link>
+                </li>
                 <hr></hr>
-            </p>
+                <li>
+                    <Link target="_blank" href="https://oyle.world/"><spann>Oyl3</spann></Link>
+                </li>
+                <hr></hr>
+                <li>
+                    <Link target="_blank" href="https://www.instagram.com/lewy180/"><spann>lewy180</spann></Link>
+                </li>
+                <hr></hr>
+            </ul>
         </section>
-        {/* <section className="flex flex-wrap items-center justify-evenly w-full p-5">
+        <section className="flex flex-wrap items-center justify-evenly w-full p-5">
             <div className="w-[5%]">
                 <Image
                 src="/images/sidefx_badge_flat.png"
@@ -106,7 +120,7 @@ export default function AboutPage() {
                 // className="w-full h-auto"
                 /> 
             </div>
-        </section> */}
+        </section>
         </main>
     </div>
     )

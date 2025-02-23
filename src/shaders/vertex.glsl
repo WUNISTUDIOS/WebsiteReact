@@ -92,7 +92,7 @@ float cnoise(vec3 P) {
 void main() {
     vUv = uv;
 
-    vDisplacement = cnoise(position + vec3(2.0 * uTime));
+    vDisplacement = cnoise(position + vec3(0.2 * uTime));
 
     vec3 newPosition = position + normal * (uIntensity * vDisplacement);
 

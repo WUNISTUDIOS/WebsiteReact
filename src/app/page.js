@@ -63,7 +63,7 @@ const handleVideoClick = () => {
               autoPlay
               muted
             >
-              <source src="videos/MACHINETRAILER3.mp4"/>
+              <source src="videos/MACHINETRAILER5.mp4"/>
             </video>
             {/* <video
               className="w-1/2"
@@ -97,7 +97,7 @@ const handleVideoClick = () => {
         </div>
         </section> */}
         <section>
-          <div className=" ml-10 mr-10 py-10">
+          <div className=" py-10">
             {/* <Footer3d/> */}
             <OrbShader />
           </div>
@@ -114,7 +114,7 @@ const handleVideoClick = () => {
               
               className="relative w-[95%] max-w-10xl mx-auto my-10 variable-rounded overflow-hidden"
               style={{ cursor: 'pointer', }}
-            whileInView={{"--rounded": "5%"}}
+              whileInView={{"--rounded": "5%"}}
               initial={{ "--rounded": "20%" }}
               viewport={{amount: 0.5}}
               >
@@ -135,7 +135,7 @@ const handleVideoClick = () => {
                 <motion.h2 
                   layout='position'
                   transition={{ duration: 1, ease: "easeInOut"}} 
-                  className="shadow-xl rounded-lg text-white p-4 bg-red-800 text-center font-bold max-w-min mx-auto"
+                  className="shadow-xl rounded-lg text-white p-4 text-center font-bold max-w-min mx-auto border-2 border-red-800"
                 >
                   FxReel
                 </motion.h2>
@@ -143,14 +143,14 @@ const handleVideoClick = () => {
                   <motion.div
                     layout="position"
                     transition={{layout: {duration: 1}}}
-                    className="font-monument shadow-xl bg-red-800 text-white text-center mr-5 ml-5 my-5 p-5 mx-auto rounded-lg "
+                    className="font-monument shadow-xl border-2 border-red-800 text-white text-center mr-5 ml-5 my-5 p-5 mx-auto rounded-lg "
                     style={{cursor: "pointer"}}
                   >
                     
                     <p className='p-2'>To further improve as a technical artist, 
                       I spent 2023 at Seneca school of VFX in their post graduate program.<br></br>
                     With a special interest in effects simulation, I learnt from industry leading artists, 
-                    the full visual effects pipeline used for Hollywood productions. 
+                    the full visual effects pipeline used for Hollywood productions.<br></br> 
                     From matchmoving to tool building. I left the program with a renewed vigor and a 
                     deeper understanding of computer graphics.
                     </p>
@@ -193,9 +193,9 @@ const handleVideoClick = () => {
                 onClick={() => setLoveText(!isLoveText)}
                 style={{ cursor: 'pointer' }}
                 >
-                <motion.h2 layout className="shadow-xl bg-red-800 text-white rounded-lg p-4 text-center  font-bold max-w-min mx-auto">Lov3</motion.h2>
+                <motion.h2 layout className="shadow-xl border-2 border-red-800 text-white rounded-lg p-4 text-center  font-bold max-w-min mx-auto">Lov3</motion.h2>
                 {isLoveText && (
-                  <motion.div className="font-monument shadow-xl bg-red-800 text-white text-center mr-5 ml-5 my-5 mx-auto p-5 rounded-lg">
+                  <motion.div className="font-monument shadow-xl border-2 border-red-800 text-white text-center mr-5 ml-5 my-5 mx-auto p-5 rounded-lg">
                     <p className='p-2'> A collaboration with artist and director Drew Boyle to produce a full length - full cg 
                       music for LOV3. His attention to detail along with his skills in Look development meshed 
                       perfection with my technical animation and fx skills.<br></br> 
@@ -228,7 +228,7 @@ const handleVideoClick = () => {
               autoPlay
               muted
             >
-              <source src="videos/CompressedFULLMACHINECUTV5.mp4"/> 
+              <source src="videos/MachinecutFullNcIGV8_2.mp4"/> 
             </video>
           </motion.div>
           <motion.div 
@@ -238,9 +238,9 @@ const handleVideoClick = () => {
                 style={{ cursor: 'pointer' }}
                 className=""
                 >
-                <motion.h2 layout className="shadow-xl p-4 text-center bg-red-800 text-white rounded-lg font-bold max-w-min mx-auto">MACHINE</motion.h2>
+                <motion.h2 layout className="shadow-xl p-4 text-center border-2 border-red-800 text-white rounded-lg font-bold max-w-min mx-auto">MACHINE</motion.h2>
                 {isMachineText && (
-                  <motion.div className="font-monument shadow-xl p-4 text-center bg-red-800 text-white mr-5 ml-5 my-5 mx-auto rounded-lg">
+                  <motion.div className="font-monument shadow-xl p-4 text-center border-2 border-red-800 text-white mr-5 ml-5 my-5 mx-auto rounded-lg">
                     <p> Commissioned by Angel De La Torre, machine is a full length cg feature for his song machine. 
                     </p>
                   </motion.div>
