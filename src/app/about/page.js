@@ -53,7 +53,7 @@ export default function AboutPage() {
                 </p>
             </div>
         <section className='flex flex-col p-5'>
-            <h1 className='relative font-bold text-4xl xl:text-6xl md:text-4xl text-white'> Clients/Collaborators</h1>
+            <h1 className='relative font-bold text-xl xl:text-6xl md:text-4xl text-white'> Clients/Collaborators</h1>
             <hr></hr>
             <br></br>
             <ul className='font-extralight xl:text-5xl md:text-4xl text-lg text-white'>
