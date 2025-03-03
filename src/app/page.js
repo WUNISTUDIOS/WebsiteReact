@@ -5,12 +5,14 @@ import Link from "next/link"
 // import AnimatedText, { AnimatedText02 } from "@/components/text-animation"
 import { motion } from "framer-motion"
 import { useRef, useState } from "react"
+import Video from "next-video"
 
 import Experience from "../components/character.js"
 import Footer3d from "../components/footer3d"
 
 import Image from "next/image"
 import OrbShader from "@/components/OrbShader.js"
+
 
 
 export default function Home() {
@@ -123,7 +125,8 @@ const handleVideoClick = () => {
                   autoPlay
                   muted
                 >
-                  <source src="videos/reel_stitch_06.mp4"/> 
+                  <source src="https://d6wod28es4wuu.cloudfront.net/reel_stitch_06.mp4"
+                    type="video/mp4"/> 
                 </video>
                 </motion.div>
                 <motion.div 
@@ -184,7 +187,9 @@ const handleVideoClick = () => {
               muted={isMuted}
               onClick={handleVideoClick}
             >
-              <source src="videos/HB2_LOVE.mp4"/> 
+              <source src="https://d6wod28es4wuu.cloudfront.net/HB2_LOVE.mp4"
+                type="video/mp4"
+              /> 
             </video>
           </motion.div>
           <motion.div 
@@ -228,7 +233,8 @@ const handleVideoClick = () => {
               autoPlay
               muted
             >
-              <source src="videos/MachinecutFullNcIGV8_2.mp4"/> 
+              <source src="https://d6wod28es4wuu.cloudfront.net/MachinecutFullNcIGV8_2.mp4"
+              type="video/mp4"/> 
             </video>
           </motion.div>
           <motion.div 
