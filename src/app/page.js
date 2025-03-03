@@ -57,7 +57,8 @@ const handleVideoClick = () => {
               autoPlay
               muted
             >
-              <source src="videos/AL_Season_04.mp4"/>
+              <source src="https://d6wod28es4wuu.cloudfront.net/AL_Season_04.mp4"
+                type="video/mp4"/>
             </video>
             <video
               className="w-1/2"
@@ -65,7 +66,8 @@ const handleVideoClick = () => {
               autoPlay
               muted
             >
-              <source src="videos/MACHINETRAILER5.mp4"/>
+              <source src="https://d6wod28es4wuu.cloudfront.net/MACHINETRAILER5.mp4"
+                type="video/mp4"/>
             </video>
             {/* <video
               className="w-1/2"
@@ -81,7 +83,8 @@ const handleVideoClick = () => {
               autoPlay
               muted
             >
-              <source src="videos/story_ornament.mp4" />
+              <source src="https://d6wod28es4wuu.cloudfront.net/story_ornament.mp4"
+                type="video/mp4"/>
             </video>
             <video 
               className="w-1/2"
@@ -89,7 +92,8 @@ const handleVideoClick = () => {
               autoPlay
               muted
             >
-              <source src="videos/lov3IG.mp4"/>
+              <source src="https://d6wod28es4wuu.cloudfront.net/Lov3IG.mp4"
+                type="video/mp4"/>
             </video>
           </div>
         </section>
