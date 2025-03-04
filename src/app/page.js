@@ -153,6 +153,8 @@ const handleMachineVideoClick = () => {
                   loop
                   autoPlay
                   muted
+                  controlsList="nofullscreen nodownload noremoteplayback"
+                  playsInline
                 >
                   <source src="https://d6wod28es4wuu.cloudfront.net/reel_stitch_06.mp4"
                     type="video/mp4"/> 
