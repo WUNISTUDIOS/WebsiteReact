@@ -66,6 +66,10 @@ export default function AboutPage() {
                 </li>
                 <hr></hr>
                 <li>
+                    <Link target="_blank" href="https://www.northscopemedia.com/"><spann>North Scope Media</spann></Link>
+                </li>
+                <hr></hr>
+                <li>
                     <Link target="_blank" href="https://www.leafythings.com/"><spann>LeafyThings</spann></Link>
                 </li>
                 <hr></hr>

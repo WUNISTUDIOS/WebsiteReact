@@ -1,19 +1,19 @@
 import Head from "next/head"
 import localFont from "next/font/local"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Lolo(){
     return (
         <section className='my-40 text-white '>
             <div className='flex flex-col content-center justify-evenly space-y-2'>
-                <h1 className='font-bold text-center text-4xl xl:text-xl md:text-4xl '
-                >
-                    Lolos.site
-                </h1>
-                {/* <h1 className='font-bold text-4xl text-center underline '
+                <li className="font-bold text-center text-4xl xl:text-4xl md:text-4xl ">
+                    <Link target="_blank" href="https://lolos.site/"><spann>Lolos.site</spann></Link>
+                </li>
+                <h1 className='font-bold text-4xl text-center underline '
                 >
                     / Fullstack Dev / Animation /  
-                </h1> */}
+                </h1>
             </div>
             <div className='p-5 flex flex-wrap items-start gap-4'>
             <div className='text-sm w-full md:w-1/3 '>

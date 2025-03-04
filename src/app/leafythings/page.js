@@ -65,7 +65,7 @@ export default function Leafy(){
             </div>
         </section>
             <div className="flex flex-col items-center justify-center text-center space-y-2">
-                <p className="font-extralight text-sm m-5"> 
+                <p className="font-extralight text-sm m-5 text-slate-500"> 
                     concept package designs for buzzd and busy bee
                 </p>
             </div>

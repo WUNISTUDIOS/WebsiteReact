@@ -37,6 +37,17 @@ const handleVideoClick = () => {
   }
 }
 
+const MachineRef = useRef(null)
+const [isMachineMuted, setMachineIsMuted] = useState(true)
+const handleMachineVideoClick = () => {
+  const newMachineMutedState = !isMachineMuted
+  setMachineIsMuted(newMachineMutedState)
+
+  if(MachineRef.current){
+    MachineRef.current.muted = newMachineMutedState
+  }
+}
+
   return (
     <div className="">
       <Head>
@@ -53,18 +64,25 @@ const handleVideoClick = () => {
           <div className="flex flex-wrap items-start  justify-between m-5 my-10 h-full">
             <video
               className="w-1/2"
+              className="w-1/2"
+              controlsList="nofullscreen nodownload noremoteplayback"
+              loop
               loop
               autoPlay
               muted
+              disablePictureInPicture
             >
               <source src="https://d6wod28es4wuu.cloudfront.net/AL_Season_04.mp4"
                 type="video/mp4"/>
             </video>
             <video
               className="w-1/2"
+              className="w-1/2"
+              controlsList="nofullscreen nodownload noremoteplayback"
               loop
               autoPlay
               muted
+              disablePictureInPicture
             >
               <source src="https://d6wod28es4wuu.cloudfront.net/MACHINETRAILER5.mp4"
                 type="video/mp4"/>
@@ -79,18 +97,25 @@ const handleVideoClick = () => {
             </video> */}
             <video 
               className="w-1/2"
+              controlsList="nofullscreen nodownload noremoteplayback"
+              playsInline
+              loop
               loop
               autoPlay
               muted
+              disablePictureInPicture
             >
               <source src="https://d6wod28es4wuu.cloudfront.net/story_ornament.mp4"
                 type="video/mp4"/>
             </video>
             <video 
               className="w-1/2"
+              controlsList="nofullscreen nodownload noremoteplayback"
+              playsInline
               loop
               autoPlay
               muted
+              disablePictureInPicture
             >
               <source src="https://d6wod28es4wuu.cloudfront.net/Lov3IG.mp4"
                 type="video/mp4"/>
@@ -188,6 +213,8 @@ const handleVideoClick = () => {
               ref={videoRef}
               loop
               autoPlay
+              controlsList="nofullscreen nodownload noremoteplayback"
+              playsInline
               muted={isMuted}
               onClick={handleVideoClick}
             >
@@ -222,7 +249,7 @@ const handleVideoClick = () => {
         <motion.div 
           layout 
           onClick={() => setIsMachine(!isMachine)}
-          animate={{ scale: isMachine ? 1.2 : 1 }}
+          animate={{ scale: isMachine ? 1.1 : 1 }}
           style={{ cursor: 'pointer' }}
 
           transition={{ duration: 1, ease: "easeIn", }}
@@ -233,9 +260,13 @@ const handleVideoClick = () => {
           viewport={{amount: 0.5}}
           >
             <video className="w-full"
+              ref={MachineRef}
               loop
               autoPlay
-              muted
+              controlsList="nofullscreen nodownload noremoteplayback"
+              playsInline
+              muted={isMachineMuted}
+              onClick={handleMachineVideoClick}
             >
               <source src="https://d6wod28es4wuu.cloudfront.net/MachinecutFullNcIGV8_2.mp4"
               type="video/mp4"/> 
@@ -324,6 +355,11 @@ const handleVideoClick = () => {
           /> 
           </div>
         </section>
+        <div className="flex flex-col items-center justify-center text-center">
+                <p className="font-extralight text-slate-500 text-sm"> 
+                    select graphic work in collaboration with Lewy180
+                </p>
+            </div>
 
           <section>
           {/* <div className="h-screen">
