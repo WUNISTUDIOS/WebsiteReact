@@ -22,10 +22,6 @@ const [isFxreel, setFxreel] = useState(false)
 const [isLove, setIsLove] = useState(false)
 const [isLoveText, setLoveText] = useState(false)
 
-const [isMachine, setIsMachine] = useState(false)
-const [isMachineText, setMachineText] = useState(false)
-const handleClick = () => setIsClicked(!isClicked)
-
 const videoRef = useRef(null)
 const [isMuted, setIsMuted] = useState(true)
 const handleVideoClick = () => {
@@ -37,6 +33,9 @@ const handleVideoClick = () => {
   }
 }
 
+const [isMachine, setIsMachine] = useState(false)
+const [isMachineText, setMachineText] = useState(false)
+
 const MachineRef = useRef(null)
 const [isMachineMuted, setMachineIsMuted] = useState(true)
 const handleMachineVideoClick = () => {
@@ -45,6 +44,20 @@ const handleMachineVideoClick = () => {
 
   if(MachineRef.current){
     MachineRef.current.muted = newMachineMutedState
+  }
+}
+
+const [isOB, setIsOB] = useState(false)
+const [isOBText, setOBText] = useState(false)
+
+const OBRef = useRef(null)
+const [isOBMuted, setOBIsMuted] = useState(true)
+const handleOBVideoClick = () => {
+  const newOBMutedState = !isOBMuted
+  setOBIsMuted(newOBMutedState)
+
+  if(OBRef.current){
+    OBRef.current.muted = newOBMutedState
   }
 }
 
@@ -61,12 +74,11 @@ const handleMachineVideoClick = () => {
         </section> */}
         <section>
           {/* <div className="flex max-h-min gap-2 w-fit max-w-[98%] rounded-lg mx-auto"> */}
-          <div className="flex flex-wrap items-start  justify-between m-5 my-10 h-full">
+          <div className="flex flex-wrap items-start justify-between m-5 my-10 h-full">
             <video
               className="w-1/2"
-              className="w-1/2"
               controlsList="nofullscreen nodownload noremoteplayback"
-              loop
+              playsInline
               loop
               autoPlay
               muted
@@ -77,8 +89,8 @@ const handleMachineVideoClick = () => {
             </video>
             <video
               className="w-1/2"
-              className="w-1/2"
               controlsList="nofullscreen nodownload noremoteplayback"
+              playsInline
               loop
               autoPlay
               muted
@@ -99,7 +111,6 @@ const handleMachineVideoClick = () => {
               className="w-1/2"
               controlsList="nofullscreen nodownload noremoteplayback"
               playsInline
-              loop
               loop
               autoPlay
               muted
@@ -150,11 +161,11 @@ const handleMachineVideoClick = () => {
               viewport={{amount: 0.5}}
               >
                 <video className="w-full"
-                  loop
-                  autoPlay
-                  muted
                   controlsList="nofullscreen nodownload noremoteplayback"
                   playsInline
+                  autoPlay
+                  loop
+                  muted
                 >
                   <source src="https://d6wod28es4wuu.cloudfront.net/reel_stitch_06.mp4"
                     type="video/mp4"/> 
@@ -199,7 +210,7 @@ const handleMachineVideoClick = () => {
         <motion.div 
           layout 
           onClick={() => setIsLove(!isLove)}
-          animate={{ scale: isLove ? 1.2 : 1 }}
+          animate={{ scale: isLove ? 1.05 : 1 }}
           style={{ cursor: 'pointer' }}
 
           transition={{ duration: 1, ease: "easeIn", }}
@@ -235,10 +246,10 @@ const handleMachineVideoClick = () => {
                 {isLoveText && (
                   <motion.div className="font-monument shadow-xl border-2 border-red-800 text-white text-center mr-5 ml-5 my-5 mx-auto p-5 rounded-lg">
                     <p className='p-2'> A collaboration with artist and director Drew Boyle to produce a full length - full cg 
-                      music for LOV3. His attention to detail along with his skills in Look development meshed 
-                      perfection with my technical animation and fx skills.<br></br> 
+                      music video for LOV3, a single from the Northstar Album. His attention to detail along with his skills in Look development meshed 
+                      perfectly with my technical animation and fx skills.<br></br> 
                       End result is cohesive and detailed world that follows our protagonist on his epic journey to 
-                      the “northstar” 
+                      the “Northstar” 
                     </p>
                     <p>
                       Drew / Oyle collaborator 
@@ -248,19 +259,19 @@ const handleMachineVideoClick = () => {
               </motion.div>
           </section>
           <section>
-        <motion.div 
-          layout 
-          onClick={() => setIsMachine(!isMachine)}
-          animate={{ scale: isMachine ? 1.1 : 1 }}
-          style={{ cursor: 'pointer' }}
+            <motion.div 
+              layout 
+              onClick={() => setIsMachine(!isMachine)}
+              animate={{ scale: isMachine ? 1.05 : 1 }}
+              style={{ cursor: 'pointer' }}
 
-          transition={{ duration: 1, ease: "easeIn", }}
-              
-          className="relative w-[95%] max-w-10xl mx-auto my-10 variable-rounded overflow-hidden"
-          whileInView={{"--rounded": "5%"}}
-          initial={{ "--rounded": "20%" }}
-          viewport={{amount: 0.5}}
-          >
+              transition={{ duration: 1, ease: "easeIn", }}
+                  
+              className="relative w-[95%] max-w-10xl mx-auto my-10 variable-rounded overflow-hidden"
+              whileInView={{"--rounded": "5%"}}
+              initial={{ "--rounded": "20%" }}
+              viewport={{amount: 0.5}}
+              >
             <video className="w-full"
               ref={MachineRef}
               loop
@@ -273,32 +284,68 @@ const handleMachineVideoClick = () => {
               <source src="https://d6wod28es4wuu.cloudfront.net/MachinecutFullNcIGV8_2.mp4"
               type="video/mp4"/> 
             </video>
-          </motion.div>
-          <motion.div 
-                layout="position"
-                transition={{layout: {duration: 1}}}
-                onClick={() => setMachineText(!isMachineText)}
-                style={{ cursor: 'pointer' }}
-                className=""
-                >
-                <motion.h2 layout className="shadow-xl p-4 text-center border-2 border-red-800 text-white rounded-lg font-bold max-w-min mx-auto">MACHINE</motion.h2>
-                {isMachineText && (
-                  <motion.div className="font-monument shadow-xl p-4 text-center border-2 border-red-800 text-white mr-5 ml-5 my-5 mx-auto rounded-lg">
-                    <p> Commissioned by Angel De La Torre, machine is a full length cg feature for his song machine. 
-                    </p>
-                  </motion.div>
-                )}
               </motion.div>
+              <motion.div 
+                    layout="position"
+                    transition={{layout: {duration: 1}}}
+                    onClick={() => setMachineText(!isMachineText)}
+                    style={{ cursor: 'pointer' }}
+                    className=""
+                    >
+                    <motion.h2 layout className="shadow-xl p-4 text-center border-2 border-red-800 text-white rounded-lg font-bold max-w-min mx-auto">MACHINE</motion.h2>
+                    {isMachineText && (
+                      <motion.div className="font-monument shadow-xl p-4 text-center border-2 border-red-800 text-white mr-5 ml-5 my-5 mx-auto rounded-lg">
+                        <p> Commissioned by Angel De La Torre, MACHINE is a full length cg feature music video for MACHINE. 
+                        </p>
+                      </motion.div>
+                    )}
+                </motion.div>
           </section>
-          <section> 
-          {/* <motion.div>
-            <YoutTubeEmbed />b
-          </motion.div> */}
-          {/* <div className="h-screen">
-            <BikeTion />
-          </div> */}
-        </section>
+          <section>
+            <motion.div 
+              layout 
+              onClick={() => setIsOB(!isOB)}
+              animate={{ scale: isOB ? 1.05 : 1 }}
+              style={{ cursor: 'pointer' }}
 
+              transition={{ duration: 1, ease: "easeIn", }}
+                  
+              className="relative w-[95%] max-w-10xl mx-auto my-10 variable-rounded overflow-hidden"
+              whileInView={{"--rounded": "5%"}}
+              initial={{ "--rounded": "20%" }}
+              viewport={{amount: 0.5}}
+              >
+            <video className="w-full"
+              ref={OBRef}
+              loop
+              autoPlay
+              controlsList="nofullscreen nodownload noremoteplayback"
+              playsInline
+              muted={isOBMuted}
+              onClick={handleOBVideoClick}
+            >
+              <source src="https://d6wod28es4wuu.cloudfront.net/03_3%20OB_insntagram.mp4"
+              type="video/mp4"/> 
+            </video>
+              </motion.div>
+              <motion.div 
+                    layout="position"
+                    transition={{layout: {duration: 1}}}
+                    onClick={() => setOBText(!isOBText)}
+                    style={{ cursor: 'pointer' }}
+                    className=""
+                    >
+                    <motion.h2 layout className="shadow-xl p-4 text-center border-2 border-red-800 text-white rounded-lg font-bold max-w-min mx-auto">Open Borders</motion.h2>
+                    {isOBText && (
+                      <motion.div className="font-monument shadow-xl p-4 text-center border-2 border-red-800 text-white mr-5 ml-5 my-5 mx-auto rounded-lg">
+                        <p> A compilation project between artists from all around the world.<br></br> Open Borders is a techno, breakcore and ambient journey
+                          connecting emerging talents and their love for music.<br></br> My contribution is an animated short that captures the essence of the artists
+                          involved. 
+                        </p>
+                      </motion.div>
+                    )}
+                </motion.div>
+          </section> 
         <section className="flex flex-wrap items-center justify-start w-full p-10">
           {/* <div className="w-full sm:w-1/2 lg:w-1/3 ">
           <Image

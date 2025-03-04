@@ -23,7 +23,7 @@ const FigmaEmbed = () => {
         />
         <LeafyCard
         href="/leafythings"
-        imageSrc='/images/LTXmas.png'
+        imageSrc='/images/leafyBirthV7.png'
         title='Leafythings'
         description='Digital Designer' 
         />
