@@ -22,7 +22,7 @@ export default function Nav(){
                             </Link>
                         </div>
                     </li>
-                    <li>
+                    <li className='hover:cursor-pointer hover:scale-105 transition-transform'>
                         <Link href="/fullstack"
                         > 
                         <span>fullstack</span></Link>
@@ -30,7 +30,8 @@ export default function Nav(){
                     {/* <li>
                         <Link href="/dashboard"><span>motion/graphix</span></Link>
                     </li> */}
-                    <li>
+                    <li className='hover:cursor-pointer hover:scale-105 transition-transform'
+                    >
                         <Link href="/about"><span>about</span></Link>
                     </li>
 

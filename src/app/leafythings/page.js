@@ -1,6 +1,7 @@
 import Head from "next/head"
 import localFont from "next/font/local"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Leafy(){
     return (
@@ -14,7 +15,7 @@ export default function Leafy(){
                 >
                     / Product Design / UI - UX / 
                 </h1>
-                <p className='font-extralight xl:text-2xl md:text-4xl text-4xl m-5'
+                <p className='font-extralight xl:text-2xl md:text-4xl text-4xl m-5 p-4'
                 > 
                     A new and ever changing industry, Cannabis from a cultural and business
                     prespective has much room for innovation. Designing from
@@ -71,7 +72,10 @@ export default function Leafy(){
             </div>
         <section className='flex flex-wrap items-start justfy-center'>
             <div className='text-sm w-full md:w-1/3 p-5'>
-            <h1 className='font-bold text-4xl xl:text-xl md:text-xl'> Eatme UI</h1>
+            <li className="font-bold text-4xl xl:text-xl md:text-xl">
+                <Link target="_blank" href="https://eatmeedibles.com/"><spann>Eatme UI</spann></Link>
+            </li>
+            {/* <h1 className='font-bold text-4xl xl:text-xl md:text-xl'> Eatme UI</h1> */}
             <hr className='my-2'></hr>
             <p className='font-monument relative'>
                 A direct to consumer desktop and mobile application. 

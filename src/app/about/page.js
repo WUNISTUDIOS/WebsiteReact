@@ -86,9 +86,14 @@ export default function AboutPage() {
                 </li>
                 <hr></hr>
                 <li>
-                    <Link target="_blank" href="https://www.instagram.com/lewy180/"><spann>lewy180</spann></Link>
+                    <Link target="_blank" href="https://www.instagram.com/lewy180/"><spann>Lewy180</spann></Link>
                 </li>
                 <hr></hr>
+                <li>
+                    <Link target="_blank" href="https://www.instagram.com/akuavisuals/"><spann>Akuavisuals</spann></Link>
+                </li>
+                <hr></hr>
+                
             </ul>
         </section>
         <section className="flex flex-wrap items-center justify-evenly w-full p-5">

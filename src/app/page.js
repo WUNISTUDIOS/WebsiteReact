@@ -74,7 +74,7 @@ const handleOBVideoClick = () => {
         </section> */}
         <section>
           {/* <div className="flex max-h-min gap-2 w-fit max-w-[98%] rounded-lg mx-auto"> */}
-          <div className="flex flex-wrap items-start justify-between m-5 my-10 h-full">
+          <div className="flex flex-wrap items-start justify-between m-1 my-10 h-full">
             <video
               className="w-1/2"
               controlsList="nofullscreen nodownload noremoteplayback"
@@ -128,7 +128,7 @@ const handleOBVideoClick = () => {
               muted
               disablePictureInPicture
             >
-              <source src="https://d6wod28es4wuu.cloudfront.net/Lov3IG.mp4"
+              <source src="https://d6wod28es4wuu.cloudfront.net/SmallnomusicAJBlackSkatingV2000_1.mp4"
                 type="video/mp4"/>
             </video>
           </div>
@@ -143,6 +143,11 @@ const handleOBVideoClick = () => {
             {/* <Footer3d/> */}
             <OrbShader />
           </div>
+          <div className="flex flex-col items-center justify-center text-center">
+                <p className="font-extralight text-slate-500 text-sm"> 
+                    Hover courser to inable interactivity
+                </p>
+            </div>
           {/* <div>
             <Image src={deved} layout="fill"/>
           </div> */}
@@ -196,8 +201,8 @@ const handleOBVideoClick = () => {
                       I spent 2023 at Seneca school of VFX in their post graduate program.<br></br>
                     With a special interest in effects simulation, I learnt from industry leading artists, 
                     the full visual effects pipeline used for Hollywood productions.<br></br> 
-                    From matchmoving to tool building. I left the program with a renewed vigor and a 
-                    deeper understanding of computer graphics.
+                    From matchmoving to tool building, I left the program with a renewed vigor and a 
+                    deeper understanding of computer graphics and programming.
                     </p>
                     <p>
                       This video is a culminating result of my studies
@@ -245,8 +250,8 @@ const handleOBVideoClick = () => {
                 <motion.h2 layout className="shadow-xl border-2 border-red-800 text-white rounded-lg p-4 text-center  font-bold max-w-min mx-auto">Lov3</motion.h2>
                 {isLoveText && (
                   <motion.div className="font-monument shadow-xl border-2 border-red-800 text-white text-center mr-5 ml-5 my-5 mx-auto p-5 rounded-lg">
-                    <p className='p-2'> A collaboration with artist and director Drew Boyle to produce a full length - full cg 
-                      music video for LOV3, a single from the Northstar Album. His attention to detail along with his skills in Look development meshed 
+                    <p className='p-2'> A collaboration with artist and director Drew Boyle to produce a full length - full CG 
+                      music video for LOV3. <br></br> His attention to detail along with his skills in Look development meshed 
                       perfectly with my technical animation and fx skills.<br></br> 
                       End result is cohesive and detailed world that follows our protagonist on his epic journey to 
                       the “Northstar” 
@@ -295,7 +300,7 @@ const handleOBVideoClick = () => {
                     <motion.h2 layout className="shadow-xl p-4 text-center border-2 border-red-800 text-white rounded-lg font-bold max-w-min mx-auto">MACHINE</motion.h2>
                     {isMachineText && (
                       <motion.div className="font-monument shadow-xl p-4 text-center border-2 border-red-800 text-white mr-5 ml-5 my-5 mx-auto rounded-lg">
-                        <p> Commissioned by Angel De La Torre, MACHINE is a full length cg feature music video for MACHINE. 
+                        <p> Commissioned by Angel De La Torre, MACHINE is a self produced, full length CG feature for MACHINE. 
                         </p>
                       </motion.div>
                     )}
@@ -339,7 +344,7 @@ const handleOBVideoClick = () => {
                     {isOBText && (
                       <motion.div className="font-monument shadow-xl p-4 text-center border-2 border-red-800 text-white mr-5 ml-5 my-5 mx-auto rounded-lg">
                         <p> A compilation project between artists from all around the world.<br></br> Open Borders is a techno, breakcore and ambient journey
-                          connecting emerging talents and their love for music.<br></br> My contribution is an animated short that captures the essence of the artists
+                          connecting emerging talents and their love for music.<br></br> My contribution is an animated short that captures the essence of this album
                           involved. 
                         </p>
                       </motion.div>
