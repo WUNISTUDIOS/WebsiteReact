@@ -38,10 +38,10 @@ export default function Lolo(){
                     autoPlay
                     muted
                 >
-                <source src="videos/loloSiteVid.MOV"/> 
+                <source src="https://d6wod28es4wuu.cloudfront.net/loloSiteVid.MOV"/> 
                 </video>
                 <Image
-                    src="/images/TitoLive.jpg"
+                    src="https://d6wod28es4wuu.cloudfront.net/TitoLive.jpg"
                     width={3224}
                     height={4032}
                     className="w-[30%] h-full shadow-sm rounded-xl relative"

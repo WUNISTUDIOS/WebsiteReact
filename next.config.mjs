@@ -10,6 +10,9 @@ const nextConfig = {
   
       return config;
     },
+    images: {
+      domains: ['d6wod28es4wuu.cloudfront.net'],
+    },
   };
 
 export default withNextVideo(nextConfig);

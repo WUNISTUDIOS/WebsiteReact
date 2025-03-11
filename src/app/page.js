@@ -378,7 +378,7 @@ const handleOBVideoClick = () => {
           </div> */}
           <div className="w-full sm:w-1/2 lg:w-1/3 ">
           <Image
-            src="/images/wearesoback.png"
+            src={"https://d6wod28es4wuu.cloudfront.net/wearesoback.png"}
             width={3000}
             height={3000}
             className="w-full h-auto"
@@ -386,7 +386,7 @@ const handleOBVideoClick = () => {
           </div>
           <div className="w-full sm:w-1/2 lg:w-1/3 ">
           <Image
-            src="/images/circleFace.png"
+            src={"https://d6wod28es4wuu.cloudfront.net/circleFace.png"}
             width={5000}
             height={5000}
             className="w-full h-auto"
@@ -402,7 +402,7 @@ const handleOBVideoClick = () => {
           </div> */}
           <div className="w-full sm:w-1/2 lg:w-1/3 ">
           <Image
-            src="/images/Untitled.png"
+            src={"https://d6wod28es4wuu.cloudfront.net/Untitled.png"}
             width={5000}
             height={5000}
             className="w-full h-auto"

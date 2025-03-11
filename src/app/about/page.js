@@ -42,7 +42,7 @@ export default function AboutPage() {
         </section>
         <section className="flex flex-wrap items-center align-center h-1/2 m-5">
         <Image
-            src="/images/working_outside.png"
+            src="https://d6wod28es4wuu.cloudfront.net/working_outside.png"
             width={2550}
             height={1785}
         />
@@ -96,7 +96,7 @@ export default function AboutPage() {
                 
             </ul>
         </section>
-        <section className="flex flex-wrap items-center justify-evenly w-full p-5">
+        {/* <section className="flex flex-wrap items-center justify-evenly w-full p-5">
             <div className="w-[5%]">
                 <Image
                 src="/images/sidefx_badge_flat.png"
@@ -129,7 +129,7 @@ export default function AboutPage() {
                 // className="w-full h-auto"
                 /> 
             </div>
-        </section>
+        </section> */}
         </main>
     </div>
     )

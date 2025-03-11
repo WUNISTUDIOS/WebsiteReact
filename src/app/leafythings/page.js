@@ -25,7 +25,7 @@ export default function Leafy(){
             </div>
             <div className='content-center m-5 relative'>
             <Image
-                    src="/images/buzzed_papers.png"
+                    src="https://d6wod28es4wuu.cloudfront.net/buzzed_papers.png"
                     width={2000}
                     height={500}
                     className='shadow-sm rounded-xl'
@@ -34,7 +34,7 @@ export default function Leafy(){
         <section className="flex relative flex-wrap justify-start p-5 ">
             <div className="w-full sm:w-1/2 lg:w-1/2 ">
             <Image
-                src="/images/buzzd_baggy.png"
+                src="https://d6wod28es4wuu.cloudfront.net/buzzd_baggy.png"
                 width={3000}
                 height={3000}
                 className="w-full h-auto shadow-sm rounded-xl"
@@ -42,7 +42,7 @@ export default function Leafy(){
             </div>
             <div className=" w-full sm:w-1/2 lg:w-1/2 ">
                 <Image
-                    src="/images/bussy_baggy.png"
+                    src="https://d6wod28es4wuu.cloudfront.net/bussy_baggy.png"
                     width={5000}
                     height={5000}
                     className="w-full h-auto shadow-sm rounded-xl"
@@ -50,7 +50,7 @@ export default function Leafy(){
             </div>
             <div className="w-full sm:w-1/2 lg:w-1/2 ">
             <Image
-                src="/images/bussy_tray_large.png"
+                src="https://d6wod28es4wuu.cloudfront.net/bussy_tray_large.png"
                 width={5000}
                 height={5000}
                 className="w-full h-auto shadow-sm rounded-xl"
@@ -58,7 +58,7 @@ export default function Leafy(){
             </div>
             <div className="w-full sm:w-1/2 lg:w-1/2 ">
                 <Image
-                    src="/images/buzzd_tray_large.png"
+                    src="https://d6wod28es4wuu.cloudfront.net/buzzd_tray_large.png"
                     width={5000}
                     height={5000}
                     className="w-full h-auto shadow-sm rounded-xl"
@@ -73,7 +73,7 @@ export default function Leafy(){
         <section className='flex flex-wrap items-start justfy-center'>
             <div className='text-sm w-full md:w-1/3 p-5'>
             <li className="font-bold text-4xl xl:text-xl md:text-xl">
-                <Link target="_blank" href="https://eatmeedibles.com/"><spann>Eatme UI</spann></Link>
+                <Link target="_blank" href="https://eatmeedibles.com/"><spann> Eatme UI</spann></Link>
             </li>
             {/* <h1 className='font-bold text-4xl xl:text-xl md:text-xl'> Eatme UI</h1> */}
             <hr className='my-2'></hr>
@@ -89,13 +89,13 @@ export default function Leafy(){
             </p>
             </div>
             <Image
-                src="/images/EatmedesktopPage.jpg"
+                src="https://d6wod28es4wuu.cloudfront.net/EatmedesktopPage.jpg"
                 width={2150}
                 height={5777}
                 className="md:w-[40%] w-full shadow-sm rounded-xl p-5 relative"
             />
             <Image
-                src="/images/shopEatme.jpg"
+                src="https://d6wod28es4wuu.cloudfront.net/shopEatme.jpg"
                 width={390}
                 height={2515}
                 className=" md:w-[20%] shadow-sm rounded-xl p-5 relative"

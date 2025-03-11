@@ -17,13 +17,13 @@ const FigmaEmbed = () => {
       <div className='flex flex-wrap justify-evenly gap-5'>
         <CardButton
           href="/lolo" 
-          imageSrc="/images/bgPortraitTito.png"
+          imageSrc="https://d6wod28es4wuu.cloudfront.net/SquareTito.png"
           title="Lolos.site"
           description='Design - Development'
         />
         <LeafyCard
         href="/leafythings"
-        imageSrc='/images/leafyBirthV7.png'
+        imageSrc='https://d6wod28es4wuu.cloudfront.net/leafyBirthV7.png'
         title='Leafythings'
         description='Digital Designer' 
         />
