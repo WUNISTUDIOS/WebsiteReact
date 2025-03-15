@@ -172,7 +172,7 @@ const handleOBVideoClick = () => {
                   loop
                   muted
                 >
-                  <source src="https://d6wod28es4wuu.cloudfront.net/reel_stitch_06.mp4"
+                  <source src="https://d6wod28es4wuu.cloudfront.net/ReelStitch_08hb.mp4"
                     type="video/mp4"/> 
                 </video>
                 </motion.div>
