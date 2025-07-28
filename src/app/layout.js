@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
         {children}
 
         <footer className=" bg-black shadow">
-          <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-left md:justify-between">
+          <div className="w-full mx-auto p-4 md:flex md:items-left md:justify-between">
             <span className="text-sm text-slate-400 sm:text-center dark:text-gray-400">© 2025 <a href="https://cgidoggs.world//" className="hover:underline">cgistudio</a>. All Swag Reserved 1-800-welovegraphix
             </span>
             <ul className="flex flex-wrap items-center text-sm font-medium">
@@ -53,3 +53,5 @@ export default function RootLayout({ children }) {
     </html>
   )
 }
+
+

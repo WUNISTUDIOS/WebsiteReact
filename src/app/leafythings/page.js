@@ -23,14 +23,15 @@ export default function Leafy() {
                     the needs of the industry as it adapts to the gobal digital market
                 </p>
             </div>
-            <div className='content-center m-5 relative'>
+                <div className='flex item-center m-5 relative'>
                 <Image
                     src="https://d6wod28es4wuu.cloudfront.net/buzzed_papersCompressd.webp"
                     width={2000}
                     height={500}
-                    className='shadow-sm rounded-xl'
+                    className='mx-auto'
                 />
             </div>
+
             <section className="flex relative flex-wrap justify-start p-5 ">
                 <div className="w-full sm:w-1/2 lg:w-1/2 ">
                     <Image

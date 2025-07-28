@@ -10,6 +10,8 @@ import BikeTion from "../../components/3dCanvas"
 import YoutTubeEmbed from "@/components/loveVideoComp"
 import Home from "../page"
 
+import "../styles/CustomButton.css"
+
 
 
 export default function dashboard() {
@@ -108,7 +110,7 @@ export default function dashboard() {
                 style={{cursor: "pointer"}}
                 className=""
                 >
-                <motion.h2 layout className="shadow-xl rounded-lg p-4 text-black text-center font-bold max-w-min mx-auto">FxReel</motion.h2>
+                <motion.h2 layout class="button-inner" className="shadow-xl rounded-lg p-4 text-black text-center font-bold max-w-min mx-auto">FxReel</motion.h2>
                 {isFxreel && (
                   <motion.div className="shadow-xl  text-center my-2 max-w-4xl mx-auto rounded-lg">
                     <p>As an aspiring technical artist. I spent 2023 at Seneca school of VFX for my post graduate studies.
