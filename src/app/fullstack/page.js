@@ -6,7 +6,7 @@ import LeafyCard from "@/components/ui/LeafyThingsCard"
 
 const FigmaEmbed = () => {
   return (
-    <section className='my-40 content-center text-white justify-center relative'>
+    <section className='my-40 content-center text-white justify-center '>
       {/* <div>
         <p className='relative font-thin xl:text-5xl md:text-4xl text-lg py-5 pt-5 pl-5'>
         web design/development allows for the perfect combination of technicality and expressionism. 

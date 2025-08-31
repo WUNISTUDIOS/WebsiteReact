@@ -13,6 +13,10 @@ import Footer3d from "../components/footer3d"
 import Image from "next/image"
 import OrbShader from "@/components/OrbShader.js"
 
+import MetalButtonLogo from "@/components/GreenButtonTest.js"
+
+
+
 
 
 export default function Home() {
@@ -182,13 +186,17 @@ export default function Home() {
             onClick={() => setFxreel(!isFxreel)}
             style={{ cursor: "pointer" }}
           >
-            <motion.h2
+            {/* <motion.h2
               layout='position'
               transition={{ duration: 1, ease: "easeInOut" }}
               className="shadow-xl rounded-lg text-white p-4 text-center font-bold max-w-min mx-auto border-2 border-red-800"
             >
               FxReel
-            </motion.h2>
+            </motion.h2> */}
+            <div
+              className='flex flex-wrap justify-evenly mx-auto'>
+            <MetalButtonLogo />
+            </div>
             {isFxreel && (
               <motion.div
                 layout="position"
