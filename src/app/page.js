@@ -7,8 +7,10 @@ import { useRef, useState } from "react"
 
 import Image from "next/image"
 import OrbShader from "@/components/OrbShader.js"
-import MetalButtonLogo from "@/components/GreenButtonTest.js"
 import LazyVideo from "@/components/LazyLoading.js"
+import RedMetalButton from "@/components/ui/customFXReelButton.js"
+import LoveButton from "@/components/ui/LoveButton"
+import MachineButton from "@/components/ui/MachineButton"
 
 
 
@@ -194,7 +196,7 @@ export default function Home() {
             </motion.h2> */}
             <div
               className='flex flex-wrap justify-evenly mx-auto'>
-            <MetalButtonLogo />
+            <RedMetalButton className='flex flex-wrap justify-evenly mx-auto w-full max-w-[100px] md:max-w-[300px]'/>
             </div>
             {isFxreel && (
               <motion.div
@@ -234,7 +236,7 @@ export default function Home() {
 
           >
 
-            <video className="w-full"
+            {/* <video className="w-full"
               ref={videoRef}
               loop
               autoPlay
@@ -246,7 +248,12 @@ export default function Home() {
               <source src="https://d6wod28es4wuu.cloudfront.net/HB2_LOVE.mp4"
                 type="video/mp4"
               />
-            </video>
+            </video> */}
+            <LazyVideo 
+              src = "https://d6wod28es4wuu.cloudfront.net/HB2_LOVE.mp4"
+              className = "w-full"
+              threshold = {0.2}
+            />
           </motion.div>
           <motion.div
             layout="position"
@@ -254,7 +261,10 @@ export default function Home() {
             onClick={() => setLoveText(!isLoveText)}
             style={{ cursor: 'pointer' }}
           >
-            <motion.h2 layout className="shadow-xl border-2 border-red-800 text-white rounded-lg p-4 text-center  font-bold max-w-min mx-auto">Lov3</motion.h2>
+            <div className='flex flex-wrap justify-evenly mx-auto w-full max-w-[200px] md:max-w-[250px]'>
+              <LoveButton />
+            </div>
+            {/* <motion.h2 layout className="shadow-xl border-2 border-red-800 text-white rounded-lg p-4 text-center  font-bold max-w-min mx-auto">Lov3</motion.h2> */}
             {isLoveText && (
               <motion.div className="font-monument shadow-xl border-2 border-red-800 text-white text-center mr-5 ml-5 my-5 mx-auto p-5 rounded-lg">
                 <p className='p-2'> A collaboration with artist and director Drew Boyle to produce a full length - full CG
@@ -284,7 +294,12 @@ export default function Home() {
             initial={{ "--rounded": "20%" }}
             viewport={{ amount: 0.5 }}
           >
-            <video className="w-full"
+          <LazyVideo 
+              src = "https://d6wod28es4wuu.cloudfront.net/MachinecutFullNcIGV8_2.mp4"
+              className = "w-full"
+              threshold = {0.2}
+          />
+            {/* <video className="w-full"
               ref={MachineRef}
               loop
               autoPlay
@@ -295,7 +310,7 @@ export default function Home() {
             >
               <source src="https://d6wod28es4wuu.cloudfront.net/MachinecutFullNcIGV8_2.mp4"
                 type="video/mp4" />
-            </video>
+            </video> */}
           </motion.div>
           <motion.div
             layout="position"
@@ -304,7 +319,10 @@ export default function Home() {
             style={{ cursor: 'pointer' }}
             className=""
           >
-            <motion.h2 layout className="shadow-xl p-4 text-center border-2 border-red-800 text-white rounded-lg font-bold max-w-min mx-auto">MACHINE</motion.h2>
+            <div className='flex flex-wrap justify-evenly mx-auto w-full max-w-[300px] md:max-w-[400px]'>
+              <MachineButton />
+            </div>
+            {/* <motion.h2 layout className="shadow-xl p-4 text-center border-2 border-red-800 text-white rounded-lg font-bold max-w-min mx-auto">MACHINE</motion.h2> */}
             {isMachineText && (
               <motion.div className="font-monument shadow-xl p-4 text-center border-2 border-red-800 text-white mr-5 ml-5 my-5 mx-auto rounded-lg">
                 <p> Commissioned by Angel De La Torre, MACHINE is a self produced, full length CG feature for MACHINE.
@@ -327,7 +345,12 @@ export default function Home() {
             initial={{ "--rounded": "20%" }}
             viewport={{ amount: 0.5 }}
           >
-            <video className="w-full"
+          <LazyVideo 
+              src = "https://d6wod28es4wuu.cloudfront.net/03_3%20OB_insntagram.mp4"
+              className = "w-full"
+              threshold = {0.2}
+          />
+            {/* <video className="w-full"
               ref={OBRef}
               loop
               autoPlay
@@ -338,7 +361,7 @@ export default function Home() {
             >
               <source src="https://d6wod28es4wuu.cloudfront.net/03_3%20OB_insntagram.mp4"
                 type="video/mp4" />
-            </video>
+            </video> */}
           </motion.div>
           <motion.div
             layout="position"
