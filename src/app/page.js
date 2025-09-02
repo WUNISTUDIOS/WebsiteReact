@@ -1,20 +1,14 @@
 "use client"
 import Head from "next/head"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Link from "next/link"
 // import AnimatedText, { AnimatedText02 } from "@/components/text-animation"
 import { motion } from "framer-motion"
 import { useRef, useState } from "react"
-import Video from "next-video"
-
-import Experience from "../components/character.js"
-import Footer3d from "../components/footer3d"
 
 import Image from "next/image"
 import OrbShader from "@/components/OrbShader.js"
-
 import MetalButtonLogo from "@/components/GreenButtonTest.js"
-
+import LazyVideo from "@/components/LazyLoading.js"
 
 
 
@@ -169,7 +163,7 @@ export default function Home() {
             initial={{ "--rounded": "20%" }}
             viewport={{ amount: 0.5 }}
           >
-            <video className="w-full"
+            {/* <video className="w-full"
               controlsList="nofullscreen nodownload noremoteplayback"
               playsInline
               autoPlay
@@ -178,7 +172,12 @@ export default function Home() {
             >
               <source src="https://d6wod28es4wuu.cloudfront.net/ReelStitch_08hb.mp4"
                 type="video/mp4" />
-            </video>
+            </video> */}
+            <LazyVideo 
+              src = "https://d6wod28es4wuu.cloudfront.net/ReelStitch_08hb.mp4"
+              className = "w-full"
+              threshold = {0.2}
+            />
           </motion.div>
           <motion.div
             layout="position"

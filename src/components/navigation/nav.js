@@ -25,7 +25,7 @@ export default function Nav(){
                     <li className='hover:cursor-pointer hover:scale-105 transition-transform'>
                         <Link href="/fullstack"
                         > 
-                        <span>fullstack</span></Link>
+                        <span>Design</span></Link>
                     </li>
                     {/* <li>
                         <Link href="/dashboard"><span>motion/graphix</span></Link>
