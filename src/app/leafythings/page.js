@@ -23,7 +23,7 @@ export default function Leafy() {
                     the needs of the industry as it adapts to the gobal digital market
                 </p>
             </div>
-            <div className='content-center m-5 relative'>
+            <div className='flex items-center content-center m-5 relative'>
                 <Image
                     src="https://d6wod28es4wuu.cloudfront.net/buzzed_papersCompressd.webp"
                     width={2000}

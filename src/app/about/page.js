@@ -31,7 +31,7 @@ export default function AboutPage() {
                 <section>
                     <div className=" relative flex flex-wrap  shadow-sm p-5 ">
                         <h1 className="text-transparent xl:text-8xl text-6xl font-bold bg-clip-text bg-gradient-to-r from-red-600 to-blue-600 py-5">digital designer</h1>
-                        <p className="xl:text-5xl md:text-4xl text-white text-lg">Denzel Arthur, designer and artist obsessed with digital identities and possibilities, with a keen interest for computer graphics, leverages unconventional aesthetics combined with a strong technical prowes to create...</p>
+                        <p className="xl:text-5xl md:text-4xl text-white text-lg">Denzel Arthur, designer and artist obsessed with digital identities and possibilities, with a keen interest for computer graphics, leveraging unconventional aesthetics combined with a strong technical prowess to create...</p>
                     </div>
                 </section>
                 <section className="flex flex-wrap items-center align-center h-1/2 m-5">
