@@ -9,8 +9,7 @@ import Image from "next/image"
 import OrbShader from "@/components/OrbShader.js"
 import LazyVideo from "@/components/LazyLoading.js"
 import RedMetalButton from "@/components/ui/customFXReelButton.js"
-import LoveButton from "@/components/ui/LoveButton"
-import MachineButton from "@/components/ui/MachineButton"
+import { LoveButton, MachineButton } from "@/components/ui/MachineLoveButton"
 
 
 
@@ -194,10 +193,9 @@ export default function Home() {
             >
               FxReel
             </motion.h2> */}
-            <div
-              className='flex flex-wrap justify-evenly mx-auto'>
-            <RedMetalButton className='flex flex-wrap justify-evenly mx-auto w-full max-w-[100px] md:max-w-[300px]'/>
-            </div>
+
+            <RedMetalButton className='flex flex-wrap justify-evenly mx-auto w-full max-w-[100px] md:max-w-[200px]'/>
+
             {isFxreel && (
               <motion.div
                 layout="position"
@@ -261,9 +259,7 @@ export default function Home() {
             onClick={() => setLoveText(!isLoveText)}
             style={{ cursor: 'pointer' }}
           >
-            <div className='flex flex-wrap justify-evenly mx-auto w-full max-w-[200px] md:max-w-[250px]'>
-              <LoveButton />
-            </div>
+              <LoveButton className='flex flex-wrap justify-evenly mx-auto w-full max-w-[100px] md:max-w-[200px]'/>
             {/* <motion.h2 layout className="shadow-xl border-2 border-red-800 text-white rounded-lg p-4 text-center  font-bold max-w-min mx-auto">Lov3</motion.h2> */}
             {isLoveText && (
               <motion.div className="font-monument shadow-xl border-2 border-red-800 text-white text-center mr-5 ml-5 my-5 mx-auto p-5 rounded-lg">
@@ -319,9 +315,7 @@ export default function Home() {
             style={{ cursor: 'pointer' }}
             className=""
           >
-            <div className='flex flex-wrap justify-evenly mx-auto w-full max-w-[300px] md:max-w-[400px]'>
-              <MachineButton />
-            </div>
+              <MachineButton className='flex flex-wrap justify-evenly mx-auto w-full max-w-[100px] md:max-w-[200px]'/>
             {/* <motion.h2 layout className="shadow-xl p-4 text-center border-2 border-red-800 text-white rounded-lg font-bold max-w-min mx-auto">MACHINE</motion.h2> */}
             {isMachineText && (
               <motion.div className="font-monument shadow-xl p-4 text-center border-2 border-red-800 text-white mr-5 ml-5 my-5 mx-auto rounded-lg">
