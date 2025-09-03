@@ -101,12 +101,12 @@ export default function Leafy() {
                     className=" md:w-[20%] shadow-sm rounded-xl p-5 relative"
                 />
             </section>
-            <div className='flex flex-col content-center justify-evenly text-center space-y-2'>
+            {/* <div className='flex flex-col content-center justify-evenly text-center space-y-2'>
                 <h1 className='font-bold text-4xl '
                 >
                     Some of my Jams
                 </h1>
-            </div>
+            </div> */}
             <div className="flex flex-wrap justify-center relative p-5">
                 <iframe
                     src="https://embed.figma.com/design/rn1ZgoMlzSsIbvMH9JemnY/ProductPageLeafyThings?node-id=0-1&embed-host=share"

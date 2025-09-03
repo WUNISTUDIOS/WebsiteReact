@@ -9,7 +9,7 @@ import Image from "next/image"
 import OrbShader from "@/components/OrbShader.js"
 import LazyVideo from "@/components/LazyLoading.js"
 import RedMetalButton from "@/components/ui/customFXReelButton.js"
-import { LoveButton, MachineButton } from "@/components/ui/MachineLoveButton"
+import { LoveButton, MachineButton, OBButton } from "@/components/ui/SvgCustomButtons"
 
 
 
@@ -144,7 +144,8 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center justify-center text-center">
             <p className="font-extralight text-slate-500 text-sm">
-              Hover courser to inable interactivity
+              {/* Hover courser to inable interactivity */}
+              Right click videos for player controls
             </p>
           </div>
           {/* <div>
@@ -364,7 +365,8 @@ export default function Home() {
             style={{ cursor: 'pointer' }}
             className=""
           >
-            <motion.h2 layout className="shadow-xl p-4 text-center border-2 border-red-800 text-white rounded-lg font-bold max-w-min mx-auto">Open Borders</motion.h2>
+          <OBButton className='flex flex-wrap justify-evenly mx-auto w-full max-w-[100px] md:max-w-[200px]'/>
+            {/* <motion.h2 layout className="shadow-xl p-4 text-center border-2 border-red-800 text-white rounded-lg font-bold max-w-min mx-auto">Open Borders</motion.h2> */}
             {isOBText && (
               <motion.div className="font-monument shadow-xl p-4 text-center border-2 border-red-800 text-white mr-5 ml-5 my-5 mx-auto rounded-lg">
                 <p> A compilation project between artists from all around the world.<br></br> Open Borders is a techno, breakcore and ambient journey

@@ -8,7 +8,7 @@ export default function AboutPage() {
     return (
         <div>
             <div>
-                <nav className=" flex mt-20 justify-center pt-20">
+                <nav className=" flex flex-row-reverse mt-20 pt-20 p-5">
                     <ul className="flex text-xl space-x-5 underline font-bold text-white">
 
                         <li>
@@ -29,14 +29,14 @@ export default function AboutPage() {
             </Head>
             <main>
                 <section>
-                    <div className=" relative flex flex-wrap justify-center shadow-sm p-5 text-center">
+                    <div className=" relative flex flex-wrap  shadow-sm p-5 ">
                         <h1 className="text-transparent xl:text-8xl text-6xl font-bold bg-clip-text bg-gradient-to-r from-red-600 to-blue-600 py-5">digital designer</h1>
-                        <p className="xl:text-5xl md:text-4xl text-white text-lg"><strong class="font-semibold text-transparent text-3xl xl:text-6xl bg-clip-text bg-gradient-to-r to-red-600 from-blue-500 p-1">Denzel Arthur,</strong>an artist and designer developing and enhancing identities for businesses on digital platforms. With a special interest in computer graphics, leveraging unconventional aesthetics with a deep technical understanding and appreciation for new media.</p>
+                        <p className="xl:text-5xl md:text-4xl text-white text-lg">Denzel Arthur, designer and artist obsessed with digital identities and possibilities, with a keen interest for computer graphics, leverages unconventional aesthetics combined with a strong technical prowes to create...</p>
                     </div>
                 </section>
                 <section className="flex flex-wrap items-center align-center h-1/2 m-5">
                     <Image
-                        src="https://d6wod28es4wuu.cloudfront.net/working_outsideCompressed.webp"
+                        src="https://d6wod28es4wuu.cloudfront.net/working_outsideWeb.webp"
                         width={2550}
                         height={1785}
                     />
