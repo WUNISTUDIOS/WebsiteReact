@@ -176,7 +176,7 @@ export default function Home() {
                 type="video/mp4" />
             </video> */}
             <LazyVideo 
-              src = "https://d6wod28es4wuu.cloudfront.net/ReelStitch_08hb.mp4"
+              src = "https://d6wod28es4wuu.cloudfront.net/reel_stitch_9.mp4"
               className = "w-full"
               threshold = {0.2}
             />

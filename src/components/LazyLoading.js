@@ -12,6 +12,9 @@ const LazyVideo = ({
     const [isInView, setisInView] = useState(false)
     const [isLoaded, setIsLoaded] = useState(false)
     const containerRef = useRef(null)
+    const internalVideoRef = useRef(null)
+
+    const actualVideoRef = videoRef || internalVideoRef
 
     useEffect(() => {
         const observer = new IntersectionObserver(([entry])=>{
@@ -23,6 +26,44 @@ const LazyVideo = ({
         if(containerRef.current){observer.observe(containerRef.current)}
         return () => observer.disconnect()
     },[threshold])
+
+    useEffect(() =>{
+        const handleVisibilityChange = () =>{
+            if(!document.hidden && actualVideoRef.current && isLoaded){
+                const video = actualVideoRef.current
+                if(video.paused){
+                    video.currentTime = 0
+                    video.play().catch(console.log)
+                }
+            }
+        }
+        const handlePageShow = (event) => {
+            if(event.persisted && actualVideoRef && isLoaded){
+                const video = actualVideoRef.current
+                video.currentTime = 0
+                video.play().catch(console.log)
+            }
+        }
+        const handleWindowFocus = () =>{
+            if(actualVideoRef.current && isLoaded){
+                const video = actualVideoRef.current
+                if(video.paused){
+                    video.currentTime = 0
+                    video.play().catch(console.log)
+                }
+            }
+        }
+
+        document.addEventListener('visibilitychange', handleVisibilityChange)
+        window.addEventListener('pageshow', handlePageShow)
+        window.addEventListener('focus', handleWindowFocus)
+        return () =>{
+            document.addEventListener('visibilitychange', handleVisibilityChange)
+            window.addEventListener('pageshow', handlePageShow)
+            window.addEventListener('focus', handleWindowFocus)
+        }
+    },[isLoaded])
+
 
     const handleLoadedData = () => {setIsLoaded(true)}
 

@@ -34,20 +34,24 @@ export default function RootLayout({ children }) {
       </div>
         {children}
 
-        <footer className=" bg-black shadow mt-auto">
+        {/* <footer className=" bg-black shadow mt-auto">
           <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-left md:justify-between">
             <span className="text-sm text-slate-400 sm:text-center dark:text-gray-400">© 2025 <a href="https://cgidoggs.world//" className="hover:underline">cgistudio</a>. All Swag Reserved 1-800-welovegraphix
             </span>
             <ul className="flex flex-wrap items-center text-sm font-medium">
-              {/* <li>
-                <a href="#" className="hover:underline me-4 md:me-6">About</a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">Contact</a>
-              </li> */}
             </ul>
           </div>
-        </footer>
+        </footer> */}
+        <footer className="bg-black shadow mt-auto">
+  <div className="w-full mx-auto max-w-screen-xl p-4">
+    <span className="text-sm text-slate-400 block text-center dark:text-gray-400">
+      © 2025 <a href="https://cgidoggs.world//" className="hover:underline">cgistudio</a>. All Swag Reserved 1-800-welovegraphix
+    </span>
+    <ul className="flex flex-wrap items-center justify-center text-sm font-medium">
+      {/* Your commented out links */}
+    </ul>
+  </div>
+</footer>
       </section>
       </body>
     </html>

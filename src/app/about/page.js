@@ -8,7 +8,7 @@ export default function AboutPage() {
     return (
         <div>
             <div>
-                <nav className=" flex flex-row-reverse mt-20 pt-20 p-5">
+                <nav className=" flex mt-20 pt-20 p-5">
                     <ul className="flex text-xl space-x-5 underline font-bold text-white">
 
                         <li>
