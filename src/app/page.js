@@ -95,7 +95,7 @@ export default function Home() {
               muted
               disablePictureInPicture
             >
-              <source src="https://d6wod28es4wuu.cloudfront.net/MACHINETRAILER5.mp4"
+              <source src="https://d6wod28es4wuu.cloudfront.net/MACHINETRAILER5WEB.mp4"
                 type="video/mp4" />
             </video>
             {/* <video
@@ -249,7 +249,7 @@ export default function Home() {
               />
             </video> */}
             <LazyVideo 
-              src = "https://d6wod28es4wuu.cloudfront.net/HB2_LOVE.mp4"
+              src = "https://d6wod28es4wuu.cloudfront.net/CLOV3.mp4"
               className = "w-full"
               threshold = {0.2}
             />
@@ -292,7 +292,7 @@ export default function Home() {
             viewport={{ amount: 0.5 }}
           >
           <LazyVideo 
-              src = "https://d6wod28es4wuu.cloudfront.net/MachinecutFullNcIGV8_2.mp4"
+              src = "https://d6wod28es4wuu.cloudfront.net/WEBMACHINECUT_FULL_NC_V8_2.mp4"
               className = "w-full"
               threshold = {0.2}
           />
@@ -341,7 +341,7 @@ export default function Home() {
             viewport={{ amount: 0.5 }}
           >
           <LazyVideo 
-              src = "https://d6wod28es4wuu.cloudfront.net/03_3%20OB_insntagram.mp4"
+              src = "https://d6wod28es4wuu.cloudfront.net/OBFULLCUT4WEB.mp4"
               className = "w-full"
               threshold = {0.2}
           />

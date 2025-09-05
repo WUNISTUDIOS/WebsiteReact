@@ -89,7 +89,7 @@ const LazyVideo = ({
             )}
 
             <video
-              ref={videoRef}
+            //   ref={videoRef}
               className={className}
               controlsList="nofullscreen nodownload noremoteplayback"
               playsInline
