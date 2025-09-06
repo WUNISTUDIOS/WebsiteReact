@@ -195,7 +195,7 @@ export default function Home() {
               FxReel
             </motion.h2> */}
 
-            <RedMetalButton className='flex flex-wrap justify-evenly mx-auto w-full max-w-[100px] md:max-w-[200px]'/>
+            <RedMetalButton className='flex flex-wrap justify-evenly mx-auto w-52 max-w-[100px] md:max-w-[200px]'/>
 
             {isFxreel && (
               <motion.div
@@ -260,7 +260,7 @@ export default function Home() {
             onClick={() => setLoveText(!isLoveText)}
             style={{ cursor: 'pointer' }}
           >
-              <LoveButton className='flex flex-wrap justify-evenly mx-auto w-full max-w-[100px] md:max-w-[200px]'/>
+              <LoveButton className='flex flex-wrap justify-evenly mx-auto w-52 max-w-[100px] md:max-w-[200px]'/>
             {/* <motion.h2 layout className="shadow-xl border-2 border-red-800 text-white rounded-lg p-4 text-center  font-bold max-w-min mx-auto">Lov3</motion.h2> */}
             {isLoveText && (
               <motion.div className="font-monument shadow-xl border-2 border-red-800 text-white text-center mr-5 ml-5 my-5 mx-auto p-5 rounded-lg">
@@ -316,7 +316,7 @@ export default function Home() {
             style={{ cursor: 'pointer' }}
             className=""
           >
-              <MachineButton className='flex flex-wrap justify-evenly mx-auto w-full max-w-[100px] md:max-w-[200px]'/>
+              <MachineButton className='flex flex-wrap justify-evenly mx-auto w-52 max-w-[100px] md:max-w-[200px]'/>
             {/* <motion.h2 layout className="shadow-xl p-4 text-center border-2 border-red-800 text-white rounded-lg font-bold max-w-min mx-auto">MACHINE</motion.h2> */}
             {isMachineText && (
               <motion.div className="font-monument shadow-xl p-4 text-center border-2 border-red-800 text-white mr-5 ml-5 my-5 mx-auto rounded-lg">
@@ -365,7 +365,7 @@ export default function Home() {
             style={{ cursor: 'pointer' }}
             className=""
           >
-          <OBButton className='flex flex-wrap justify-evenly mx-auto w-full max-w-[100px] md:max-w-[200px]'/>
+          <OBButton className='flex flex-wrap justify-evenly mx-auto w-52 max-w-[100px] md:max-w-[200px]'/>
             {/* <motion.h2 layout className="shadow-xl p-4 text-center border-2 border-red-800 text-white rounded-lg font-bold max-w-min mx-auto">Open Borders</motion.h2> */}
             {isOBText && (
               <motion.div className="font-monument shadow-xl p-4 text-center border-2 border-red-800 text-white mr-5 ml-5 my-5 mx-auto rounded-lg">
@@ -404,7 +404,7 @@ export default function Home() {
           </div> */}
           <div className="w-full sm:w-1/2 lg:w-1/3 ">
             <Image
-              src={"https://d6wod28es4wuu.cloudfront.net/wearesoback_1Compressed.png"}
+              src={"https://d6wod28es4wuu.cloudfront.net/WebWearesoback.webp"}
               width={3000}
               height={3000}
               className="w-full h-auto"
@@ -412,7 +412,7 @@ export default function Home() {
           </div>
           <div className="w-full sm:w-1/2 lg:w-1/3 ">
             <Image
-              src={"https://d6wod28es4wuu.cloudfront.net/circleFaceCompressed.png"}
+              src={"https://d6wod28es4wuu.cloudfront.net/circleFaceCompressed.webp"}
               width={5000}
               height={5000}
               className="w-full h-auto"
@@ -428,7 +428,7 @@ export default function Home() {
           </div> */}
           <div className="w-full sm:w-1/2 lg:w-1/3 ">
             <Image
-              src={"https://d6wod28es4wuu.cloudfront.net/UntitledCompressed.png"}
+              src={"https://d6wod28es4wuu.cloudfront.net/UntitledCompressed.webp"}
               width={5000}
               height={5000}
               className="w-full h-auto"
