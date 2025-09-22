@@ -127,7 +127,7 @@ export default function Home() {
               muted
               disablePictureInPicture
             >
-              <source src="https://d6wod28es4wuu.cloudfront.net/SmallnomusicAJBlackSkatingV2000_1.mp4"
+              <source src="https://d6wod28es4wuu.cloudfront.net/WebPhone_AJFullSequence_2.mp4"
                 type="video/mp4" />
             </video>
           </div>

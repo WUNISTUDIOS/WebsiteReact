@@ -25,7 +25,7 @@ const FigmaEmbed = () => {
           href="/leafythings"
           imageSrc='https://d6wod28es4wuu.cloudfront.net/leafyBirthV7Compressed.webp'
           title='Leafythings'
-          description='Digital Designer'
+          description='Product Designer'
         />
       </div>
     </section>
