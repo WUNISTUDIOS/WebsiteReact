@@ -31,7 +31,7 @@ export default function AboutPage() {
                 <section>
                     <div className=" relative flex flex-wrap  shadow-sm p-5 ">
                         <h1 className="text-transparent xl:text-8xl text-6xl font-bold bg-clip-text bg-gradient-to-r from-red-600 to-blue-600 py-5">digital designer</h1>
-                        <p className="xl:text-5xl md:text-4xl text-white text-lg">Denzel Arthur, designer and artist fascinated by identity, technology, and the spaces between. Combining experimental aesthetics with technical expertise to push the boundaries of visual communication.</p>
+                        <p className="xl:text-5xl md:text-4xl text-white text-lg">Denzel Arthur, a digital artist and designer fascinated by the creative potentials of technology. With an MFA focused on interaction design, postgraduate specialization in VFX and procedural workflows, and countless contracts solving digital problems creatively. This comprehensive foundation drives a strong passion for exploring art, technology and design.</p>
                     </div>
                 </section>
                 <section className="flex flex-wrap items-center align-center h-1/2 m-5">

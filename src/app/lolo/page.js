@@ -5,18 +5,10 @@ import Link from "next/link"
 
 export default function Lolo() {
     return (
-        <section className='my-40 text-white '>
-            <div className='flex flex-col content-center justify-evenly space-y-2 pr-10 pl-10'>
-                <li className="font-bold text-center text-4xl xl:text-4xl md:text-4xl underline bg-gradient-to-r from-red-600 to-blue-600 hover:cursor-pointer hover:scale-105 transition-transform rounded-sm ">
-                    <Link target="_blank" href="https://lolos.site/"><spann>Lolos.site</spann></Link>
-                </li>
-                {/* <h1 className='font-bold text-4xl text-center underline '
-                >
-                    / Fullstack Dev / Animation /  
-                </h1> */}
-            </div>
-            <div className='p-5 flex flex-wrap items-start gap-4'>
-                <div className='text-sm w-full md:w-1/3 '>
+        <section className='my-40 text-white flex flex-wrap items-start justify-center'>
+            <div className='text-sm w-full md:w-2/3 p-5'>
+                    <h1 className="font-bold text-4xl xl:text-xl md:text-xl rounded-sm"> Lolos.site</h1>
+                    <hr className='my-2'></hr>
                     <p className='font-monument relative pr-2'>
                         Creative website for Louisa Thewes, an artist and shoe designer currently studying
                         at London College of Fashion. Her unique and unmistakable style is brought to life
@@ -29,11 +21,14 @@ export default function Lolo() {
                         into the digital environment as a form on preservation, whilst being enhanced through animation. <br></br>
                         These figures are modeled with clay in a t-pose then scanned with polycam,
                         rigged and animated in blender
-
                     </p>
-                </div>
+                    <p className="my-2 ">
+                    <Link target="_blank" href="https://lolos.site/"><spann className="text-slate-500">visit site</spann></Link>
+                </p>
+            </div>    
+                <div className="flex flex-wrap relative justify-center items-start gap-8">
                 <video
-                    className="w-[30%] shadow-sm rounded-xl relative"
+                    className="w-[40%] shadow-sm rounded-xl relative"
                     loop
                     autoPlay
                     muted
@@ -46,7 +41,8 @@ export default function Lolo() {
                     height={4032}
                     className="w-[30%] h-full shadow-sm rounded-xl relative"
                 />
-            </div>
+                </div>
+ 
             {/* <section className="flex relative flex-wrap justify-start p-5 ">
                 <div className='content-center m-5 relative'>
                 <Image

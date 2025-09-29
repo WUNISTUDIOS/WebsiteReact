@@ -13,7 +13,7 @@ export default function Leafy() {
                 </h1>
                 <h1 className='font-bold text-4xl underline '
                 >
-                    / Product Design / UI - UX /
+                    Product Design
                 </h1>
                 <p className='font-extralight xl:text-2xl md:text-4xl text-4xl m-5 p-4'
                 >
@@ -23,7 +23,40 @@ export default function Leafy() {
                     the needs of the industry as it adapts to the gobal digital market
                 </p>
             </div>
-            <div className='flex items-center justify-center m-5 relative'>
+            <section className='flex flex-wrap items-start justify-center'>
+                <div className='text-sm w-full md:w-2/3 p-5'>
+                        <h1 className="font-bold text-4xl xl:text-xl md:text-xl rounded-sm"> Eatme</h1>
+                    {/* <h1 className='font-bold text-4xl xl:text-xl md:text-xl'> Eatme UI</h1> */}
+                    <hr className='my-2'></hr>
+                    <p className='font-monument relative'>
+                        A direct to consumer desktop and mobile application.
+                        A frictionless platform for both developers, consumers and clients.
+                        Individualistic yet well researched platforms designed for a fast paced
+                        ever changing digital market.<br></br> <br></br>
+                        Eat me, with its bold and colorful package design, have themselves a platform
+                        that highlights their unique branding, while cleverly revealing their product
+                        categories and statistics.
+                    </p>
+                    <p className="my-2">
+                        <Link target="_blank" href="https://eatmeedibles.com/"><spann className="text-slate-500"> visit-site</spann></Link>
+                    </p>
+                </div>
+                <div className="flex flex-wrap relative justify-center items-start">
+                <Image
+                    src="https://d6wod28es4wuu.cloudfront.net/mobileEatMeShop.webp"
+                    width={574}
+                    height={1602}
+                    className="md:w-[40%] w-full shadow-sm rounded-xl p-5 relative"
+                />
+                <Image
+                    src="https://d6wod28es4wuu.cloudfront.net/mobileEatMeNewsLetter.webp"
+                    width={574}
+                    height={1602}
+                    className=" md:w-[40%] shadow-sm rounded-xl p-5 relative"
+                />
+                </div>
+            </section>
+                        <div className='flex items-center justify-center m-5 relative'>
                 <Image
                     src="https://d6wod28es4wuu.cloudfront.net/buzzed_papersCompressd.webp"
                     width={2000}
@@ -32,7 +65,7 @@ export default function Leafy() {
                 />
             </div>
             <section className="flex relative flex-wrap justify-start p-5 ">
-                <div className="w-full sm:w-1/2 lg:w-1/2 ">
+                <div className="w-full sm:w-1/2 lg:w-1/2">
                     <Image
                         src="https://d6wod28es4wuu.cloudfront.net/buzzd_baggyCompressed.webp"
                         width={3000}
@@ -58,7 +91,7 @@ export default function Leafy() {
                 </div>
                 <div className="w-full sm:w-1/2 lg:w-1/2 ">
                     <Image
-                        src="https://d6wod28es4wuu.cloudfront.net/buzzd_tray_large.png"
+                        src="https://d6wod28es4wuu.cloudfront.net/buzzd_tray_largeCompressed.webp"
                         width={5000}
                         height={5000}
                         className="w-full h-auto shadow-sm rounded-xl"
@@ -70,44 +103,14 @@ export default function Leafy() {
                     concept package designs for buzzd and busy bee
                 </p>
             </div>
-            <section className='flex flex-wrap items-start justfy-center'>
-                <div className='text-sm w-full md:w-1/3 p-5'>
-                    <li className="font-bold text-4xl xl:text-xl md:text-xl bg-gradient-to-r from-red-600 to-blue-600 hover:cursor-pointer hover:scale-105 transition-transform rounded-sm pl-2">
-                        <Link target="_blank" href="https://eatmeedibles.com/"><spann> Eatme - UI</spann></Link>
-                    </li>
-                    {/* <h1 className='font-bold text-4xl xl:text-xl md:text-xl'> Eatme UI</h1> */}
-                    <hr className='my-2'></hr>
-                    <p className='font-monument relative'>
-                        A direct to consumer desktop and mobile application.
-                        A frictionless platform for both developers, consumers and clients.
-                        Individualistic yet well researched platforms designed for a fast paced
-                        ever changing digital market.<br></br> <br></br>
-                        Eat me, with its bold and colorful package design, have themselves a platform
-                        that highlights their unique branding, while cleverly revealing their product
-                        categories and statistics.
 
-                    </p>
-                </div>
-                <Image
-                    src="https://d6wod28es4wuu.cloudfront.net/EatmedesktopPage.jpg"
-                    width={2150}
-                    height={5777}
-                    className="md:w-[40%] w-full shadow-sm rounded-xl p-5 relative"
-                />
-                <Image
-                    src="https://d6wod28es4wuu.cloudfront.net/shopEatme.jpg"
-                    width={390}
-                    height={2515}
-                    className=" md:w-[20%] shadow-sm rounded-xl p-5 relative"
-                />
-            </section>
             {/* <div className='flex flex-col content-center justify-evenly text-center space-y-2'>
                 <h1 className='font-bold text-4xl '
                 >
                     Some of my Jams
                 </h1>
             </div> */}
-            <div className="flex flex-wrap justify-center relative p-5">
+            {/* <div className="flex flex-wrap justify-center relative p-5">
                 <iframe
                     src="https://embed.figma.com/design/rn1ZgoMlzSsIbvMH9JemnY/ProductPageLeafyThings?node-id=0-1&embed-host=share"
                     width="1000"
@@ -124,7 +127,7 @@ export default function Leafy() {
                     allowFullScreen
                     style={{ border: 'none' }}
                 />
-            </div>
+            </div> */}
         </section>
     )
 }

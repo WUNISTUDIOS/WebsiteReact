@@ -138,18 +138,10 @@ export default function Home() {
         </div>
         </section> */}
         <section>
-          <div className=" py-10">
-            {/* <Footer3d/> */}
-            <OrbShader />
-          </div>
-          <div className="flex flex-col items-center justify-center text-center">
+          {/* <div className="flex flex-col items-center justify-center text-center">
             <p className="font-extralight text-slate-500 text-sm">
-              {/* Hover courser to inable interactivity */}
               Right click videos for player controls
             </p>
-          </div>
-          {/* <div>
-            <Image src={deved} layout="fill"/>
           </div> */}
         </section>
         <section>
@@ -377,6 +369,10 @@ export default function Home() {
             )}
           </motion.div>
         </section>
+                            <div className=" py-10">
+            {/* <Footer3d/> */}
+            <OrbShader />
+          </div>
         <section className="flex flex-wrap items-center justify-start w-full p-10">
           {/* <div className="w-full sm:w-1/2 lg:w-1/3 ">
           <Image
