@@ -1,7 +1,7 @@
 // components/FigmaEmbed.js
 import React from 'react';
 import Image from 'next/image';
-import CardButton from '@/components/ui/webCarButton'
+import CardButton from '@/components/ui/webCardButton'
 import LeafyCard from "@/components/ui/LeafyThingsCard"
 
 const FigmaEmbed = () => {
