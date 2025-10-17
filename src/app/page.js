@@ -13,6 +13,8 @@ import RedMetalButton from "@/components/ui/customFXReelButton.js"
 import AnimatedTextBox from "@/components/ui/AnimTextBox"
 import { LoveButton, MachineButton, OBButton } from "@/components/ui/SvgCustomButtons"
 
+import ImageWorksCard from "@/components/ui/ImageWorksCard"
+
 
 
 
@@ -242,45 +244,34 @@ export default function Home() {
             </p>
           </AnimatedTextBox>
         </section>
-        <div className=" py-10">
-          {/* <Footer3d/> */}
-          <OrbShader />
-        </div>
-        <section className="flex flex-wrap items-center justify-start w-full p-10">
-          <div className="w-full sm:w-1/2 lg:w-1/3 ">
-            <Image
-              src={"https://d6wod28es4wuu.cloudfront.net/WebWearesoback.webp"}
-              width={3000}
-              height={3000}
-              className="w-full h-auto"
+        {/* <div className=" py-10 ">
+          <motion.div
+            layout
+            style={{ cursor: "pointer" }}
+            transition={{ duration: 1, ease: "easeIn" }}
+            viewport={{ amount: 0.5 }}>
+            <OrbShader />
+          </motion.div>
+        </div> */}
+        <section className='flex flex-wrap justify-evenly gap-5 text-white'>
+          <div className='lg:w-2/5 p-10'>
+            <ImageWorksCard
+              href="/ImageWorks"
+              imageSrc="https://d6wod28es4wuu.cloudfront.net/bugCloseuppsd.webp"
+            title="Biblically accurate slop harvester"
+            // description='Design - Development'
             />
-          </div>
-          <div className="w-full sm:w-1/2 lg:w-1/3 ">
-            <Image
-              src={
-                "https://d6wod28es4wuu.cloudfront.net/circleFaceCompressed.webp"
-              }
-              width={5000}
-              height={5000}
-              className="w-full h-auto"
-            />
-          </div>
-          <div className="w-full sm:w-1/2 lg:w-1/3 ">
-            <Image
-              src={
-                "https://d6wod28es4wuu.cloudfront.net/UntitledCompressed.webp"
-              }
-              width={5000}
-              height={5000}
-              className="w-full h-auto"
+            </div>
+
+          <div className='lg:w-2/5 p-10'>
+            <ImageWorksCard
+              href="/ImageWorks"
+              imageSrc="https://d6wod28es4wuu.cloudfront.net/UntitledCompressed.webp"
+            title="Unintled explorations of blend modes"
+            description='in collaboration with Lewy180'
             />
           </div>
         </section>
-        <div className="flex flex-col items-center justify-center text-center">
-          <p className="font-extralight text-slate-500 text-sm">
-            select graphic work in collaboration with Lewy180
-          </p>
-        </div>
       </main>
     </div>
   );

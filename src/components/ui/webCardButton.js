@@ -4,13 +4,13 @@ import Image from 'next/image';
 export default function CardButton({ href, imageSrc, title, description }) {
   return (
     <Link href={href} 
-        className="text-center content-center hover:cursor-pointer hover:scale-105 transition-transform">
+        className="hover:cursor-pointer hover:scale-105 transition-transform lg:w-max p-5">
       <div>
         <Image
           src={imageSrc}
           alt={title}
-          width={300}
-          height={500}
+          width={500}
+          height={800}
           className='rounded-3xl'
         />
         <h2

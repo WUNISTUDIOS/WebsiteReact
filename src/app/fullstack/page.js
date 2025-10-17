@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import CardButton from '@/components/ui/webCardButton'
-import LeafyCard from "@/components/ui/LeafyThingsCard"
+import LeafyCard from "@/components/ui/ImageWorksCard"
 
 const FigmaEmbed = () => {
   return (
@@ -21,7 +21,7 @@ const FigmaEmbed = () => {
           title="Lolos.site"
           description='Design - Development'
         />
-        <LeafyCard
+        <CardButton
           href="/leafythings"
           imageSrc='https://d6wod28es4wuu.cloudfront.net/leafyBirthV7Compressed.webp'
           title='Leafythings'

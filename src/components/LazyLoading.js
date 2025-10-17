@@ -173,7 +173,7 @@ const LazyVideo = ({
             {!isInView ? (
                 // Placeholder while not in view
                 <div
-                    className={`${className} bg-red-900 opacity-30 flex items-center justify-center`}
+                    className={`${className} bg-white opacity-30 flex items-center justify-center`}
                     style={{ aspectRatio: "16/9" }}
                 >
                     <div className="text-white text-sm opacity-50">Loading...</div>
