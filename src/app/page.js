@@ -120,6 +120,7 @@ export default function Home() {
               className="w-full"
               threshold={1.0}
               isAnimated={isOpen}
+              poster={"https://d6wod28es4wuu.cloudfront.net/ReelCover.webp"}
             />
           </motion.div>
           <AnimatedTextBox
@@ -130,13 +131,13 @@ export default function Home() {
           >
             <p className="p-2 text-sm md:text-base">
               My Fx reel under the guidance of the
-              Seneca school of VFX in their post graduate program.<br></br>
+              Seneca school of VFX in their post graduate program.
               With a special interest in effects simulation, I learnt from
               industry leading artists, the full visual effects pipeline
-              used for Hollywood productions.<br></br>
+              used for Hollywood productions.
               From matchmoving to tool building.
+              This video is a culminating result of my studies
             </p>
-            <p className="text-sm md:text-base">This video is a culminating result of my studies</p>
           </AnimatedTextBox>
         </section>
         <section>
@@ -156,6 +157,7 @@ export default function Home() {
               className="w-full"
               threshold={1.0}
               isAnimated={isLove}
+              poster={"https://d6wod28es4wuu.cloudfront.net/LoveCover.webp"}
             />
           </motion.div>
           <AnimatedTextBox
@@ -167,10 +169,9 @@ export default function Home() {
             <p className="p-2">
               {" "}
               A collaboration with artist and director Drew Boyle to produce
-              a full length - full CG music video for LOV3. <br></br> His
+              a full length - full CG music video for LOV3. His
               attention to detail along with his skills in Look development
               meshed perfectly with my technical animation and fx skills.
-              <br></br>
               End result is cohesive and detailed world that follows our
               protagonist on his epic journey to the “Northstar”
             </p>
@@ -194,6 +195,7 @@ export default function Home() {
               className="w-full"
               threshold={1.0}
               isAnimated={isMachine}
+              poster={"https://d6wod28es4wuu.cloudfront.net/MachineCover.webp"}
             />
           </motion.div>
           <AnimatedTextBox
@@ -226,6 +228,7 @@ export default function Home() {
               className="w-full"
               threshold={0.2}
               isAnimated={isOB}
+              poster={"https://d6wod28es4wuu.cloudfront.net/OBCover.webp"}
             />
           </motion.div>
           <AnimatedTextBox
@@ -237,9 +240,9 @@ export default function Home() {
             <p>
               {" "}
               A compilation project between artists from all around the
-              world.<br></br> Open Borders is a techno, breakcore and
+              world. Open Borders is a techno, breakcore and
               ambient journey connecting emerging talents and their love for
-              music.<br></br> My contribution is an animated short that
+              music. My contribution is an animated short that
               captures the essence of this album involved.
             </p>
           </AnimatedTextBox>
@@ -253,7 +256,7 @@ export default function Home() {
             <OrbShader />
           </motion.div>
         </div> */}
-        <section className='flex flex-wrap justify-evenly gap-5 text-white'>
+        {/* <section className='flex flex-wrap justify-evenly gap-5 text-white'>
           <div className='lg:w-2/5 p-10'>
             <ImageWorksCard
               href="/ImageWorks"
@@ -271,8 +274,8 @@ export default function Home() {
             description='in collaboration with Lewy180'
             />
           </div>
-        </section>
+        </section> */}
       </main>
     </div>
-  );
+  )
 }

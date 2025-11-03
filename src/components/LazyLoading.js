@@ -10,6 +10,7 @@ const LazyVideo = ({
     threshold = 0.1,
     isAnimated = false,
     customButton = null,
+    poster = null,
 }) => {
     const [isInView, setIsInView] = useState(false)
     const [isLoaded, setIsLoaded] = useState(false)
@@ -172,21 +173,27 @@ const LazyVideo = ({
         <div ref={containerRef} className="relative group">
             {!isInView ? (
                 // Placeholder while not in view
-                <div
-                    className={`${className} bg-white opacity-30 flex items-center justify-center`}
-                    style={{ aspectRatio: "16/9" }}
-                >
-                    <div className="text-white text-sm opacity-50">Loading...</div>
+                // <div
+                //     className={`${className} bg-white opacity-60 flex items-center justify-center`}
+                //     style={{ aspectRatio: "16/9" }}
+                // >
+                //     <div className="text-white text-sm opacity-50">Loading...</div>
+                // </div>
+                <div className={`${className} relative overflow-hidden blur-lg`} style={{ aspectRatio: "16/9" }}>
+                    {poster && <img src={poster} alt="" className="w-full h-full object-cover" />}
                 </div>
             ) : (
                 <>
                     {/* Loading overlay */}
                     {!isLoaded && (
-                        <div className="absolute inset-0 bg-red-900 opacity-30 flex items-center justify-center z-10">
-                            <div className="text-white text-sm opacity-50">
-                                Loading video...
-                            </div>
-                        </div>
+                        // <div className="absolute inset-0 bg-black opacity-30 flex items-center justify-center z-10">
+                        //     <div className="text-white text-sm opacity-50">
+                        //         Loading video...
+                        //     </div>
+                        // </div>
+                            <div className={`${className} relative overflow-hidden blur-lg`} style={{ aspectRatio: "16/9" }}>
+                                {poster && <img src={poster} alt="" className="w-full h-full object-cover" />}
+                </div>
                     )}
 
                     <video
