@@ -116,7 +116,7 @@ export default function Home() {
             viewport={{ amount: 0.5 }}
           >
             <LazyVideo
-              src="https://d6wod28es4wuu.cloudfront.net/WEB2025ReelCompressed.mp4"
+              src="https://d6wod28es4wuu.cloudfront.net/V1cmp_WEB2025ReelFullRes.mp4"
               className="w-full"
               threshold={1.0}
               isAnimated={isOpen}
