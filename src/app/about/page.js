@@ -30,7 +30,7 @@ export default function AboutPage() {
             <main>
                 <section>
                     <div className=" relative flex flex-wrap  shadow-sm p-5 ">
-                        <h1 className="text-transparent xl:text-8xl text-6xl font-bold bg-clip-text bg-gradient-to-r from-red-600 to-blue-600 py-5">digital designer</h1>
+                        <h1 className="text-transparent xl:text-8xl text-6xl text-white font-bold bg-clip-text py-5">digital designer</h1>
                         <p className="xl:text-5xl md:text-4xl text-white text-lg">Denzel Arthur, a digital artist and designer fascinated by the creative potentials of technology. With an MFA focused on interaction design, postgraduate specialization in VFX and procedural workflows, and countless contracts solving digital problems creatively. This comprehensive foundation drives a strong passion for exploring art, technology and design.</p>
                     </div>
                 </section>
@@ -79,10 +79,10 @@ export default function AboutPage() {
                             <Link target="_blank" href="https://oyle.world/"><spann>Oyl3</spann></Link>
                         </li>
                         <hr></hr>
-                        <li>
-                            <Link target="_blank" href="https://www.instagram.com/lewy180/"><spann>Lewy180</spann></Link>
-                        </li>
-                        <hr></hr>
+                        {/* <li> */}
+                        {/*     <Link target="_blank" href="https://www.instagram.com/lewy180/"><spann>Lewy180</spann></Link> */}
+                        {/* </li> */}
+                        {/* <hr></hr> */}
                         <li>
                             <Link target="_blank" href="https://www.instagram.com/akuavisuals/"><spann>Akuavisuals</spann></Link>
                         </li>
