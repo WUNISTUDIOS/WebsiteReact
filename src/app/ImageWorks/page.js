@@ -6,7 +6,7 @@ import Subject from "@/app/Subject/page.mdx"
 
 export default function ImageWorksPage() {
     return (
-        <div className="my-40 px-2 text-white">
+        <div className="my-40 px-2 text-black">
                     <Subject />
         </div>
 
@@ -44,7 +44,7 @@ export default function ImageWorksPage() {
         //             select graphic work in collaboration with Lewy180
         //         </p>
         //     </div>
-        //     <section className='flex flex-col md:flex-row items-center justify-center text-white'>
+        //     <section className='flex flex-col md:flex-row items-center justify-center text-black'>
         //         <div className=' w-full lg:w-2/5 p-10'>
         //             <ImageWorksCard
         //                 href="/ImageWorks"
@@ -59,7 +59,7 @@ export default function ImageWorksPage() {
         //     </h1>
         //   </div> */}
         //     </section>
-        //     <section className='flex flex-col md:flex-row items-center justify-center text-white py-10'>
+        //     <section className='flex flex-col md:flex-row items-center justify-center text-black py-10'>
         //         {/* <div className="flex flex-col justify-center text-center items-center rounded-sm">
         //     <h1 className="font-bold text-4xl xl:text-xl md:text-xl rounded-sm">
         //       Unintled explorations of blend modes

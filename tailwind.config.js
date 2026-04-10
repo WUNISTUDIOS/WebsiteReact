@@ -10,8 +10,7 @@ theme: {
 	fontFamily: {
 		gatwick: ["var--font-gatwick", "sans-serif"],
 		monument: ["var--font-monument", "sans-serif"],
-		// sans: ["gatwick", ]
-
+		"instrument-sans": ["var(--font-instrument-sans)", "sans-serif"],
 	},
 	extend: {
 		backgroundImage: {

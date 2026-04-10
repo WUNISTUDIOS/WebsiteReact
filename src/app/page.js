@@ -111,7 +111,7 @@ export default function Home() {
             transition={{ duration: 1, ease: "easeIn" }}
             className="relative w-[95%] max-w-10xl mx-auto my-10 variable-rounded overflow-hidden"
             style={{ cursor: "pointer" }}
-            whileInView={{ "--rounded": "5%" }}
+            whileInView={{ "--rounded": "0%" }}
             initial={{ "--rounded": "20%" }}
             viewport={{ amount: 0.5 }}
           >
@@ -121,6 +121,7 @@ export default function Home() {
               threshold={1.0}
               isAnimated={isOpen}
               poster={"https://d6wod28es4wuu.cloudfront.net/ReelCover.webp"}
+              aspectRatio="16/9"
             />
           </motion.div>
           <AnimatedTextBox
@@ -148,7 +149,7 @@ export default function Home() {
             style={{ cursor: "pointer" }}
             transition={{ duration: 1, ease: "easeIn" }}
             className="relative w-[95%] max-w-10xl mx-auto my-10 variable-rounded overflow-hidden"
-            whileInView={{ "--rounded": "5%" }}
+            whileInView={{ "--rounded": "0%" }}
             initial={{ "--rounded": "20%" }}
             viewport={{ amount: 0.5 }}
           >
@@ -158,6 +159,7 @@ export default function Home() {
               threshold={1.0}
               isAnimated={isLove}
               poster={"https://d6wod28es4wuu.cloudfront.net/LoveCover.webp"}
+              aspectRatio="16/9"
             />
           </motion.div>
           <AnimatedTextBox
@@ -186,7 +188,7 @@ export default function Home() {
             style={{ cursor: "pointer" }}
             transition={{ duration: 1, ease: "easeIn" }}
             className="relative w-[95%] max-w-10xl mx-auto my-10 variable-rounded overflow-hidden"
-            whileInView={{ "--rounded": "5%" }}
+            whileInView={{ "--rounded": "0%" }}
             initial={{ "--rounded": "20%" }}
             viewport={{ amount: 0.5 }}
           >
@@ -219,7 +221,7 @@ export default function Home() {
             style={{ cursor: "pointer" }}
             transition={{ duration: 1, ease: "easeIn" }}
             className="relative w-[95%] max-w-10xl mx-auto my-10 variable-rounded overflow-hidden"
-            whileInView={{ "--rounded": "5%" }}
+            whileInView={{ "--rounded": "0%" }}
             initial={{ "--rounded": "20%" }}
             viewport={{ amount: 0.5 }}
           >
@@ -234,7 +236,7 @@ export default function Home() {
           <AnimatedTextBox
             isOpen={isOBText}
             onToggle={() => setOBText(!isOBText)}
-            buttonComponent={<OBButton className="flex justify-center mx-auto w-1/4 md:w-1/6" />}
+            buttonComponent={<OBButton className="flex justify-center mx-auto w-fit" />}
             borderColor="border-white-800"
           >
             <p>

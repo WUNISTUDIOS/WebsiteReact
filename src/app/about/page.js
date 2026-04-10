@@ -8,8 +8,8 @@ export default function AboutPage() {
     return (
         <div>
             <div>
-                <nav className=" flex mt-20 pt-20 p-5">
-                    <ul className="flex text-xl space-x-5 underline font-bold text-white">
+                <nav className="flex mt-8 p-5">
+                    <ul className="flex text-xl space-x-5 underline font-bold text-black">
 
                         <li>
                             <Link target="_blank" href="https://www.instagram.com/trouwsers/"> <span>instagram</span></Link>
@@ -30,8 +30,8 @@ export default function AboutPage() {
             <main>
                 <section>
                     <div className=" relative flex flex-wrap  shadow-sm p-5 ">
-                        <h1 className="text-transparent xl:text-8xl text-6xl text-white font-bold bg-clip-text py-5">digital designer</h1>
-                        <p className="xl:text-5xl md:text-4xl text-white text-lg">Denzel Arthur, a digital artist and designer fascinated by the creative potentials of technology. With an MFA focused on interaction design, postgraduate specialization in VFX and procedural workflows, and countless contracts solving digital problems creatively. This comprehensive foundation drives a strong passion for exploring art, technology and design.</p>
+                        <h1 className="xl:text-8xl text-6xl text-black font-bold py-5">digital designer</h1>
+                        <p className="xl:text-5xl md:text-4xl text-black text-lg">Denzel Arthur, a digital artist and designer fascinated by the creative potentials of technology. With an MFA focused on interaction design, postgraduate specialization in VFX and procedural workflows, and countless contracts solving digital problems creatively. This comprehensive foundation drives a strong passion for exploring art, technology and design.</p>
                     </div>
                 </section>
                 <section className="flex flex-wrap items-center align-center h-1/2 m-5">
@@ -42,15 +42,15 @@ export default function AboutPage() {
                     />
                 </section>
                 <div className="flex flex-col items-center justify-center text-center">
-                    <p className="font-extralight text-slate-500 text-sm">
+                    <p className="font-extralight text-black text-sm">
                         render for active labour print magazine
                     </p>
                 </div>
                 <section className='flex flex-col p-5'>
-                    <h1 className='relative font-bold text-xl xl:text-6xl md:text-4xl text-white'> Clients/Collaborators</h1>
+                    <h1 className='relative font-bold text-xl xl:text-6xl md:text-4xl text-black'> Clients/Collaborators</h1>
                     <hr></hr>
                     <br></br>
-                    <ul className='font-extralight xl:text-5xl md:text-4xl text-lg text-white'>
+                    <ul className='font-extralight xl:text-5xl md:text-4xl text-lg text-black'>
                         <li>
                             <Link target="_blank" href="https://www.spencerbadu.com/"><spann>Spencer Badu</spann></Link>
                         </li>
