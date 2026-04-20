@@ -11,6 +11,7 @@ const LazyVideo = ({
     isAnimated = false,
     customButton = null,
     poster = null,
+    aspectRatio = null,
 }) => {
     const [isInView, setIsInView] = useState(false)
     const [isLoaded, setIsLoaded] = useState(false)
@@ -125,14 +126,14 @@ const LazyVideo = ({
         <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
             <button
                 onClick={togglePlayPause}
-                className="bg-black/70 hover:bg-black/90 text-white p-2 rounded-full transition-all"
+                className="text-white p-2 transition-all"
                 aria-label={isPlaying ? "Pause" : "Play"}
             >
                 {isPlaying ? <Pause size={20} /> : <Play size={20} />}
             </button>
             <button
                 onClick={toggleMute}
-                className="bg-black/70 hover:bg-black/90 text-white p-2 rounded-full transition-all"
+                className="text-white p-2 transition-all"
                 aria-label={isMuted ? "Unmute" : "Mute"}
             >
                 {isMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
@@ -153,6 +154,7 @@ const LazyVideo = ({
                 <video
                     ref={actualVideoRef}
                     className={className}
+                    style={{ aspectRatio: aspectRatio }}
                     controlsList="nofullscreen nodownload noremoteplayback"
                     playsInline
                     loop
@@ -172,33 +174,21 @@ const LazyVideo = ({
     return (
         <div ref={containerRef} className="relative group">
             {!isInView ? (
-                // Placeholder while not in view
-                // <div
-                //     className={`${className} bg-white opacity-60 flex items-center justify-center`}
-                //     style={{ aspectRatio: "16/9" }}
-                // >
-                //     <div className="text-white text-sm opacity-50">Loading...</div>
-                // </div>
-                <div className={`${className} relative overflow-hidden blur-lg`} style={{ aspectRatio: "16/9" }}>
+                <div className={`${className} relative overflow-hidden blur-lg`} style={{ aspectRatio: aspectRatio }}>
                     {poster && <img src={poster} alt="" className="w-full h-full object-cover" />}
                 </div>
             ) : (
                 <>
-                    {/* Loading overlay */}
                     {!isLoaded && (
-                        // <div className="absolute inset-0 bg-black opacity-30 flex items-center justify-center z-10">
-                        //     <div className="text-white text-sm opacity-50">
-                        //         Loading video...
-                        //     </div>
-                        // </div>
-                            <div className={`${className} relative overflow-hidden blur-lg`} style={{ aspectRatio: "16/9" }}>
-                                {poster && <img src={poster} alt="" className="w-full h-full object-cover" />}
-                </div>
+                        <div className="absolute inset-0 overflow-hidden blur-lg z-10">
+                            {poster && <img src={poster} alt="" className="w-full h-full object-cover" />}
+                        </div>
                     )}
 
                     <video
                         ref={actualVideoRef}
                         className={className}
+                        style={{ aspectRatio: aspectRatio }}
                         controlsList="nofullscreen nodownload noremoteplayback"
                         playsInline
                         loop
