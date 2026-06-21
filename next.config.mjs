@@ -1,7 +1,9 @@
-import { withNextVideo } from "next-video/process";
 import createMDX from '@next/mdx';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    output: 'export',
+    trailingSlash: true,
     pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
     webpack: (config) => {
       config.module.rules.push({
@@ -9,12 +11,14 @@ const nextConfig = {
         exclude: /node_modules/,
         use: ['raw-loader', 'glslify-loader'],
       });
-  
+
       return config;
     },
     images: {
+      unoptimized: true,
       domains: ['d6wod28es4wuu.cloudfront.net'],
     },
-  };
-const withMDX = createMDX({extension: /\.(md|mdx)$/,});
-export default withMDX(withNextVideo(nextConfig));
+};
+
+const withMDX = createMDX({ extension: /\.(md|mdx)$/ });
+export default withMDX(nextConfig);

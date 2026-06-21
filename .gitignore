@@ -41,3 +41,7 @@ videos/*
 !videos/*.js
 !videos/*.ts
 public/_next-video
+
+# Large local assets — served from CloudFront in production
+public/images/
+public/videos/loloSiteVid.MOV
